@@ -3,7 +3,7 @@ layout: post
 title: "BNZ Data Challenge Recruitment Event"
 ---
 
-Notes and ideas from a BNZ recruitment event for data scientists on 27 Sept 2017 for anyone who was curious about what went on. I'm on [Twitter](https://twitter.com/Liza_Bolton) if you have any questions, or check out [my website](www.dataembassy.co.nz) for more general stuff.
+Notes and ideas from a BNZ recruitment event for data scientists on 27 Sept 2017 for anyone who was curious about what went on. I'm on [Twitter](https://twitter.com/Liza_Bolton) if you have any questions, or check out [my website](http://www.dataembassy.co.nz) for more general stuff.
 
 ## Liza's one sentence summary
 BNZ's Analytics and Insights team seems like a **great employment option** for data literate folks, but make sure you bring your **well-rounded** A-game, **data crunching alone is not enough**.
@@ -407,7 +407,7 @@ barplot(head(sort(table(man15$spc_common), decreasing = TRUE)/dim(man15)[1]*100,
     )
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-1.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-1.png)
 
 {% highlight r %}
 # Create a nice looking map
@@ -428,7 +428,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-2.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-2.png)
 
 {% highlight r %}
 ggplot() +  
@@ -448,7 +448,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-3.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-3.png)
 
 {% highlight r %}
 ggplot() +  
@@ -468,7 +468,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-4.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-4.png)
 
 {% highlight r %}
 ggplot() +  
@@ -488,7 +488,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-5.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-5.png)
 
 {% highlight r %}
 ggplot() +  
@@ -508,7 +508,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-6.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-6.png)
 
 {% highlight r %}
 ggplot() +  
@@ -528,7 +528,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-7.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/imageggplot-attempt-7.png)
 
 There are **heaps** of other cool things I think you could do with this data, but I have already procrastinated enough on this tonight. I'm not going to apply as my PhD is my focus at the moment, but this talk did get me thinking about BNZ as a great potenial employer...though lecturing and my consulting business are probably still my main plan.
 
