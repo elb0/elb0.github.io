@@ -1,6 +1,11 @@
 ---
 layout: post
 title: "Stylish Academic Writing Workshop"
+tags:
+  - PhD
+  - writing
+  - event-notes
+  - book-recommendations
 ---
 
 These are my notes from a 1 1/2 hour workshop run by the Mathematics and Statistics PhD Writing Group. Big thank you to Rebecca Turner for organising and to Helen Sword for fitting us into a very busy schedule.
