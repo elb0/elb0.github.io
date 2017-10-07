@@ -4,10 +4,9 @@ title: "BNZ Data Challenge Recruitment Event"
 tag:
   - event-notes
   - R-code
-  - jobs
 ---
 
-Notes and ideas from a BNZ recruitment event for data scientists on 27 Sept 2017 for anyone who was curious about what went on. Having trouble getting the plots to play nicely with Jekyll so here is an html link, just in case: http://www.dataembassy.co.nz/BNZ-challenge.html.
+Notes and ideas from a BNZ recruitment event for data scientists on 27 Sept 2017 for anyone who was curious about what went on. Having trouble getting the plots to play nicely with Jekyll so here is an html link, just in case: http://www.dataembassy.co.nz/BNZ-challenge.html/.
 
 ## Liza's one sentence summary
 BNZ's Analytics and Insights team seems like a **great employment option** for data literate folks, but make sure you bring your **well-rounded** A-game, **data crunching alone is not enough**.

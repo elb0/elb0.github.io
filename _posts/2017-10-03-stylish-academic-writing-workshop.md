@@ -3,7 +3,6 @@ layout: post
 title: "Stylish Academic Writing Workshop"
 tags:
   - PhD
-  - writing
   - event-notes
   - book-recommendations
 ---
