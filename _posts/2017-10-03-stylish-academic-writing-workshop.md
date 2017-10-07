@@ -1,8 +1,6 @@
 ---
+layout: post
 title: "Stylish Academic Writing Workshop"
-author: "Liza Bolton"
-date: "2017/10/03"
-output: html_document
 ---
 
 These are my notes from a 1 1/2 hour workshop run by the Mathematics and Statistics PhD Writing Group. Big thank you to Rebecca Turner for organising and to Helen Sword for fitting us into a very busy schedule.
@@ -10,7 +8,7 @@ These are my notes from a 1 1/2 hour workshop run by the Mathematics and Statist
 ## Liza's one sentence summary
 Not only is "stylish academic writing" not an oxymoron, it is within your grasp if you cultivate a craftman's attitude to your writing by developing appropriate skills and strategies and using helpful techniques (see: [reverse outlining](#revout), [audience activity](#audience), [writer's diet test](#flabby), [busting zombie nouns](#zombie)).
 
-## My key takewaways 
+## My key takewaways
 - Use [reverse outlining](#revout) to help you structure your writing.
 - Use zing-ier verbs and limit your flabby uses of "is" and other "to be" verbs. The [Writer's Diet online test](writersdiet.com) can help - notes [below](#flabby).
 - Fight your zombie nouns ([nominalisations](#zombie)).
@@ -36,7 +34,7 @@ An attitude to wanting to write well is the key theme among successful writers. 
 - Telling a story
 - Examples and scenarios
 - Personality and emotion come through (but people often feel discouraged)
-- Simple language and flow, coherence, structure 
+- Simple language and flow, coherence, structure
 - Engaging, clear sentences so you don't have to re-read over and over
 - Well-crafted
 - Balance between the English and the formulae
@@ -59,7 +57,7 @@ Additional things Helen noted in her research:
     - Can you make sense of your paper from this outline?
     - Does it flow?
     - Is it logical?
-    
+
 ## Things to think about before, during and after writing
 
 What craft looks like may differ by by discipline, but the question you must always ask is: "Is my writing well crafted?"
@@ -131,7 +129,7 @@ Any paper had at least two stories. Your story (easy - how did you get into this
 ##### Example
 In a piece of evolutionary biology research the writers told two stories.
 
-**The seagulls' story**: Seagulls have evolved to fly to just the right height to drop eggs from in order to crack them. Too high and you're wasting energy. Too low and you're not always cracking the eggs and you're also wasting energy. 
+**The seagulls' story**: Seagulls have evolved to fly to just the right height to drop eggs from in order to crack them. Too high and you're wasting energy. Too low and you're not always cracking the eggs and you're also wasting energy.
 
 **The researchers' story**: how they got interested in this.
 
@@ -182,16 +180,10 @@ Academic thought is all about abstraction, we need to think abstractly and use a
  - TED-Ed video on nominalisations <https://www.youtube.com/watch?v=dNlkHtMgcPQ>
  - New York Times piece on nominalisations <https://opinionator.blogs.nytimes.com/2012/07/23/zombie-nouns/?ref=global-home&_r=0>
  - Reading list based on this workshop on Goodreads <https://www.goodreads.com/review/list/44982838-liza?shelf=helen-sword-writing-workshop>
- 
+
 ### Bonus
-- Louise McMillan and I attended a similar workshop in 2016, that also had a great session from Gregory Howell - reproduced here for your reading benefit (sorry not all the links work anymore). <http://www.dataembassy.co.nz/blog/writing-workshop-tips.pdf>
+- Louise McMillan and I attended a similar workshop in 2016, that also had a great session from Gregory Howell - reproduced here for your reading benefit (sorry not all the links work anymore). <http://www.dataembassy.co.nz/blog/Writing-workshop-tips.pdf>
  - In 2015 the PhD Writing group also held a panel with [Rachel Fewster](https://www.stat.auckland.ac.nz/~fewster/), [Thomas Lumley](https://www.stat.auckland.ac.nz/people/tlum005) and [Russell Millar](https://www.stat.auckland.ac.nz/~millar/) that has lots of pearls of wisdom. <https://www.stat.auckland.ac.nz/seminar/recorded/zWriterTalk.mp4>
- 
- 
- 
-So, how are you going to make your writing more stylish? Come continue the conversation on [Twitter](https://twitter.com/Liza_Bolton), I'm @liza_bolton. Only stylish Tweets allowed...
 
-<a href=http://www.dataembassy.co.nz>![](blog-img/logo.png)</a>
 
-## Other recent posts
-[2017-09-27 My summary of a really cool BNZ recruitment event](http://www.dataembassy.co.nz/BNZ-challenge)
+So, how are you going to make your writing more stylish? Come continue the conversation on [Twitter](https://twitter.com/Liza_Bolton). Only stylish Tweets allowed...
