@@ -3,7 +3,7 @@ layout: post
 title: "BNZ Data Challenge Recruitment Event"
 ---
 
-Notes and ideas from a BNZ recruitment event for anyone who was curious about what went on. The event was held 27 Sept 2017 and was targetted at future data scientists. I'm on [Twitter](https://twitter.com/Liza_Bolton) if you have any questions, or check out www.dataembassy.co.nz for more general stuff.
+Notes and ideas from a BNZ recruitment event for data scientists on 27 Sept 2017 for anyone who was curious about what went on. I'm on [Twitter](https://twitter.com/Liza_Bolton) if you have any questions, or check out [my website](www.dataembassy.co.nz) for more general stuff.
 
 ## Liza's one sentence summary
 BNZ's Analytics and Insights team seems like a **great employment option** for data literate folks, but make sure you bring your **well-rounded** A-game, **data crunching alone is not enough**.
@@ -20,7 +20,7 @@ BNZ's Analytics and Insights team seems like a **great employment option** for d
 
 
 ## Notes from speakers
-![Speakers, teams and roles](images/Aistructure.jpg)
+![Speakers, teams and roles]({{ site.baseurl }}/images/Aistructure.jpg)
 
 ### Sarah
 *Head of Enterprise Insight*
@@ -68,7 +68,7 @@ BNZ's Analytics and Insights team seems like a **great employment option** for d
 - How to operationalise insights the big issue. It is all about communication.
 - In-store testing with customers of prototypes.
 - Really neat efforts at ["sensemaking"](https://www.bookdepository.com/Sensemaking-Christian-Madsbjerg/9781408708378), which ties in nicely with a book I'm reading at the moment.
-- Other issues around pace and business cycles. 
+- Other issues around pace and business cycles.
 - Didn't necessarily explain what "Building the Bridge" was going...but everyone in the video feels really good about it!
 
 ## What inspires them?
@@ -86,7 +86,7 @@ BNZ's Analytics and Insights team seems like a **great employment option** for d
 - Use Cloudera, one of the few companies doing end to end data infrastructures well in NZ
     - "Appetite do things faster and first"
 - Classic customer segmentation work pieces as well
-    
+
 ## What do they look for in potential hires?
 - Can you explain and have a conversation about what you're doing?
     - The most exciting technique in the world won't do you much good if you can't explain it...
@@ -111,14 +111,14 @@ BNZ's Analytics and Insights team seems like a **great employment option** for d
     - Not a traditional bank, we're a data company
 - What is the future of the team in terms of growth?
     - Looking to grow significantly in the next few years
-    
+
 ## Recruitment-y stuff
 **Caroline** from BNZ HR will send exclusive recruitment links out through CDES. Options for future graduate programme and general talent pool paddling.
 
 # Data Challenge
-Attendees were asked beforehand to check out the [NYC Tree dataset](https://www.kaggle.com/nycparks/tree-census) on Kaggle and consider ways it could be commercialised. 
+Attendees were asked beforehand to check out the [NYC Tree dataset](https://www.kaggle.com/nycparks/tree-census) on Kaggle and consider ways it could be commercialised.
 
-![Data Challenge Questions](images/datachallenge.jpg)
+![Data Challenge Questions]({{ site.baseurl }}/images/datachallenge.jpg)
 
 ## General ideas
 
@@ -137,13 +137,13 @@ What follows are some of the things I had brainstormed beforehand. I did a weird
         - Wrong trees for the location?
         - Disease
     - Projecting costs for future years based on current turnover rates
-    - Climate change risk modelling 
+    - Climate change risk modelling
         - How will the current tree stock fare in a changing climate?
         - Will tree varieties need to change in future?
         - How can the current trees and future plans help deal with more severe weather, especially heat
     - Pollution and air quality
     - Planning more diversity of tree types in locations to support lower allergy levels, greater range better for people (see NYT article)
-    
+
 ## Additional data that might be useful
 - Allergen scores for different tree species
 - Historical sales and rental data by borough
@@ -195,11 +195,11 @@ names(c05)
 ##  [1] "objectid"   "cen_year"   "tree_dbh"   "tree_loc"   "pit_type"  
 ##  [6] "soil_lvl"   "status"     "spc_latin"  "spc_common" "vert_other"
 ## [11] "vert_pgrd"  "vert_tgrd"  "vert_wall"  "horz_blck"  "horz_grate"
-## [16] "horz_plant" "horz_other" "sidw_crack" "sidw_raise" "wire_htap" 
-## [21] "wire_prime" "wire_2nd"   "wire_other" "inf_canopy" "inf_guard" 
+## [16] "horz_plant" "horz_other" "sidw_crack" "sidw_raise" "wire_htap"
+## [21] "wire_prime" "wire_2nd"   "wire_other" "inf_canopy" "inf_guard"
 ## [26] "inf_wires"  "inf_paving" "inf_outlet" "inf_shoes"  "inf_lights"
 ## [31] "inf_other"  "trunk_dmg"  "zipcode"    "zip_city"   "cb_num"    
-## [36] "borocode"   "boroname"   "cncldist"   "st_assem"   "st_senate" 
+## [36] "borocode"   "boroname"   "cncldist"   "st_assem"   "st_senate"
 ## [41] "nta"        "nta_name"   "boro_ct"    "x_sp"       "y_sp"      
 ## [46] "objectid_1" "location_1"
 {% endhighlight %}
@@ -227,7 +227,7 @@ names(c15)
 
 
 {% highlight r %}
-# 
+#
 {% endhighlight %}
 
 ## Exploring the data
@@ -278,7 +278,7 @@ barplot(head(sort(table(c15$spc_common), decreasing = TRUE)/dim(c15)[1]*100, n =
     )
 {% endhighlight %}
 
-![plot of chunk visualisation](/imagesvisualisation-1.svg)
+![plot of chunk visualisation]({{ site.baseurl }}/images/visualisation-1.png)
 
 ## A touch of ggplot
 This is based on work in this great post: http://zevross.com/blog/2014/07/16/mapping-in-r-using-the-ggplot2-package/
@@ -291,7 +291,7 @@ counties = readOGR("nybb.shp", layer="nybb")
 
 
 {% highlight text %}
-## OGR data source with driver: ESRI Shapefile 
+## OGR data source with driver: ESRI Shapefile
 ## Source: "nybb.shp", layer: "nybb"
 ## with 5 features
 ## It has 4 fields
@@ -371,24 +371,24 @@ head(sort(table(man15$spc_common), decreasing = TRUE), n=25)
 
 
 {% highlight text %}
-## 
-##         honeylocust        Callery pear              ginkgo 
-##               13176                7297                5859 
-##             pin oak             Sophora    London planetree 
-##                4584                4453                4122 
-##    Japanese zelkova   littleleaf linden        American elm 
-##                3596                3333                1698 
-##     American linden    northern red oak          willow oak 
-##                1583                1143                 889 
-##              cherry         Chinese elm           green ash 
-##                 869                 785                 770 
-##     swamp white oak       silver linden          crab apple 
-##                 681                 541                 437 
-##     golden raintree           red maple        sawtooth oak 
-##                 359                 356                 353 
-## Kentucky coffeetree        Norway maple        black locust 
-##                 348                 290                 259 
-##           white oak 
+##
+##         honeylocust        Callery pear              ginkgo
+##               13176                7297                5859
+##             pin oak             Sophora    London planetree
+##                4584                4453                4122
+##    Japanese zelkova   littleleaf linden        American elm
+##                3596                3333                1698
+##     American linden    northern red oak          willow oak
+##                1583                1143                 889
+##              cherry         Chinese elm           green ash
+##                 869                 785                 770
+##     swamp white oak       silver linden          crab apple
+##                 681                 541                 437
+##     golden raintree           red maple        sawtooth oak
+##                 359                 356                 353
+## Kentucky coffeetree        Norway maple        black locust
+##                 348                 290                 259
+##           white oak
 ##                 241
 {% endhighlight %}
 
@@ -407,18 +407,18 @@ barplot(head(sort(table(man15$spc_common), decreasing = TRUE)/dim(man15)[1]*100,
     )
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-1.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-1.png)
 
 {% highlight r %}
 # Create a nice looking map
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Trees of Manhattan - Locations of the top 5 species")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10, alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10, alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -428,17 +428,17 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-2.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-2.png)
 
 {% highlight r %}
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Honeylocust")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="honeylocust"),], alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="honeylocust"),], alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -448,17 +448,17 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-3.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-3.png)
 
 {% highlight r %}
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Callery pear")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="Callery pear"),], alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="Callery pear"),], alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -468,17 +468,17 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-4.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-4.png)
 
 {% highlight r %}
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Ginkgo")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="ginkgo"),], alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="ginkgo"),], alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -488,17 +488,17 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-5.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-5.png)
 
 {% highlight r %}
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Pin Oak")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="pin oak"),], alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="pin oak"),], alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -508,17 +508,17 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-6.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-6.png)
 
 {% highlight r %}
 ggplot() +  
-    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40", 
+    geom_polygon(data=counties[which(counties$BoroCode==1),], aes(x=long, y=lat, group=group), fill="grey40",
         colour="grey90", alpha=1)+
     labs(x="", y="", title="Sophora")+ #labels
     theme(axis.ticks.y = element_blank(),axis.text.y = element_blank(), # get rid of x ticks/text
           axis.ticks.x = element_blank(),axis.text.x = element_blank(), # get rid of y ticks/text
           plot.title = element_text(lineheight=.8, face="bold", vjust=1))+ # make title bold and add space
-    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="Sophora"),], alpha=0.5, size=0.3)+ 
+    geom_point(aes(x=longitude, y=latitude, color=factor(spc_common)), data=man15.10[which(man15.10$spc_common=="Sophora"),], alpha=0.5, size=0.3)+
     coord_equal(ratio=1) # square plot to avoid the distortion
 {% endhighlight %}
 
@@ -528,9 +528,9 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt](/imagesggplot-attempt-7.svg)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-7.png)
 
-There are **heaps** of other cool things I think you could do with this data, but I have already procrastinated enough on this tonight. I'm not going to apply as my PhD is my focus at the moment, but this talk did get me thinking about BNZ as a great potenial employer...though lecturing and my consulting business are probably still my main plan. 
+There are **heaps** of other cool things I think you could do with this data, but I have already procrastinated enough on this tonight. I'm not going to apply as my PhD is my focus at the moment, but this talk did get me thinking about BNZ as a great potenial employer...though lecturing and my consulting business are probably still my main plan.
 
 
-Are you going to apply? What is your great commercialisation idea for this Kaggle dataset? Let me know! 
+Are you going to apply? What is your great commercialisation idea for this Kaggle dataset? Let me know!
