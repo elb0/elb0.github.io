@@ -257,7 +257,7 @@ barplot(head(sort(table(c95$spc_common), decreasing = TRUE)/dim(c95)[1]*100, n =
      horiz = F
     )
 
-# Bunch of annoying blanks from how the data is set up that I only noticed now, hence [-1] and jiggery pokery with the denominator
+#* Bunch of annoying blanks from how the data is set up that I only noticed now, hence [-1] and jiggery pokery with the denominator
 
 # head(c05[which(c05$spc_common == "", arr.ind=T)[1]])
 
@@ -278,7 +278,7 @@ barplot(head(sort(table(c15$spc_common), decreasing = TRUE)/dim(c15)[1]*100, n =
     )
 {% endhighlight %}
 
-![plot of chunk visualisation]({{ site.baseurl }}/images/visualisation-1.png)
+**![plot of chunk visualisation]({{ site.baseurl }}/images/visualisation-1.png)
 
 ## A touch of ggplot
 This is based on work in this great post: http://zevross.com/blog/2014/07/16/mapping-in-r-using-the-ggplot2-package/
@@ -407,7 +407,7 @@ barplot(head(sort(table(man15$spc_common), decreasing = TRUE)/dim(man15)[1]*100,
     )
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-1.png)
+**![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-1.png)
 
 {% highlight r %}
 # Create a nice looking map
@@ -528,7 +528,7 @@ ggplot() +
 ## Regions defined for each Polygons
 {% endhighlight %}
 
-![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-7.png)
+![plot of chunk ggplot-attempt]({{ site.baseurl }}/images/ggplot-attempt-7.png)*
 
 There are **heaps** of other cool things I think you could do with this data, but I have already procrastinated enough on this tonight. I'm not going to apply as my PhD is my focus at the moment, but this talk did get me thinking about BNZ as a great potenial employer...though lecturing and my consulting business are probably still my main plan.
 
