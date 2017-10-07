@@ -191,3 +191,5 @@ Academic thought is all about abstraction, we need to think abstractly and use a
 
 
 So, how are you going to make your writing more stylish? Come continue the conversation on [Twitter](https://twitter.com/Liza_Bolton). Only stylish Tweets allowed...
+
+{% include fulltaglist.html %}

@@ -537,3 +537,5 @@ There are **heaps** of other cool things I think you could do with this data, bu
 
 
 Are you going to apply? What is your great commercialisation idea for this Kaggle dataset? Let me know!
+
+{% include fulltaglist.html %}
