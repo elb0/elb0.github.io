@@ -9,7 +9,7 @@ name: Liza Bolton
 description: Statistics enthusiast and Data Ambassador
 
 # URL of your avatar or profile pic (you could use your GitHub profile pic)
-avatar: images/BarsOnly.png
+avatar: {{ site.baseurl }}/images/BarsOnly.png
 
 #
 # Flags below are optional
