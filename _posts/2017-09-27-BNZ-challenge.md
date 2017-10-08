@@ -55,7 +55,7 @@ BNZ's Analytics and Insights team seems like a **great employment option** for d
 ###Shawn
 *Head of Analytics Transformation*
 
-- Was wearing and awesome Cloudera "Data is the new bacon" t-shirt
+- Was wearing an awesome Cloudera "Data is the new bacon" t-shirt
 - Comes from a business intelligence background
 
 [Shawn's LinkedIn](https://www.linkedin.com/in/shawnmlewis/)
