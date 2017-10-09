@@ -25,6 +25,8 @@ The fear that trust in experts is eroding has been rising since Brexit and Trump
 
 While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. http://www.nature.com/news/2011/111005/full/478026a.html
 
+![What can impact public trust?]({{ site.baseurl }}/images/publicdistrust.png)
+
 ## The V&A Study in Sweden (2014)
 Study investigated confidence in research and experts, also asked broken down by specific disciplines.
 
@@ -41,6 +43,7 @@ Main takeaway that Rainer mentioned: High and positive appreciation of science, 
 Good summary from the Science Media Centre [here](https://www.sciencemediacentre.co.nz/2014/12/04/public-attitudes-to-science-and-technology-key-takeaways/).
 
 ## Epistemic climate
+
 Based on Swedish, NZ and other surveys presented, trust seems mostly okay.
 
 **Rainer asks:** Does this mean everything is fine?
@@ -48,6 +51,8 @@ Based on Swedish, NZ and other surveys presented, trust seems mostly okay.
 **Answer:** We should talk about the climate, not just the weather.
 
 Trust = *weather*, but there is also the epistemic *climate*.
+
+![What does Bromme mean by "epistemic climate"?]({{ site.baseurl }}/images/epistemicclimate.png)
 
 Example: *Climate gate* allegations (which weren't true) impacted trust among those who were already leery.
 
