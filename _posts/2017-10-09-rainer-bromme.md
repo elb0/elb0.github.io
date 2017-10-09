@@ -25,7 +25,7 @@ The fear that trust in experts is eroding has been rising since Brexit and Trump
     - weakness of theory and/or methods and/or data of the original study OR of the replication itself
     - issue under study is not consistent across time, culture, contexts
 
-While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. http://www.nature.com/news/2011/111005/full/478026a.html
+While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. [](http://www.nature.com/news/2011/111005/full/478026a.html)
 
 ![What can impact public trust?]({{ site.baseurl }}/images/publictrust.png)
 
@@ -95,6 +95,9 @@ The studies below presented participants with either scientific or ethical criti
 
 **Scientific criticism**: Integrity and benevolence are rated higher if the responsible science blogger criticises them self. Expertise is considered slightly lower whether they criticise them self or someone else does. Moral of the story: If criticism is due, do it yourself! You get the bonus of increased assessments of your integrity and benevolence.
 
+A piece of advice I heard once that captures this well: F*ck up, fess up, fix up.
+I think this was via my stepdad, something his father said perhaps. I have had to repeat this mantra to myself more than once, and it helps.
+
 **Ethical aspects**: No effect on expertise. Better integrity and benevolence if the blogger comments on their own work.
 
 These judgements don't require subject knowledge. It is an example of a heuristic. Pragmatic expectations are formed using conversation related cues.
@@ -102,18 +105,17 @@ These judgements don't require subject knowledge. It is an example of a heuristi
 I've been reading [Thinking, Fast and Slow by Daniel Kahneman](https://www.goodreads.com/book/show/14062004-thinking-fast-and-slow?al_user=44982838-liza&utm_campaign=new_friend_updates_email&utm_content=title&utm_medium=email&utm_source=friend_updates) and I think there is a great connection here. We're substituting an easier question for a harder question. The question really is "is this person an content expert?", which requires you to have a level of mastery yourself, but "does this person behave/sound like an expert?" doesn't require this and is an easier question for us to answer. If you haven't read Thinking, Fast and Slow yet...why not? Do it.
 
 #### An aside
-A bit off topic, but this also made me think a bit of the [*Dr Fox Effect*](https://en.wikipedia.org/wiki/Dr._Fox_effect), the idea that "seductive" lecturers, even when not delivering good content, would receive higher ratings from students. Behaving in a way that seems like you are a good teacher might cause students to rate you as a good teacher, even if you're not delivering the content that should be an important part of their assessment of you. The findings in this case were, unsurprisingly to me, that combining the most seductive lecturing styles with high contents seemed to lead to higher achievement and students ratings.
-
-A piece of advice I heard once that captures this well: F*ck up, fess up, fix up.
-I think this was via my stepdad, something his father said perhaps.
+A bit off topic, but this also made me think a bit of the [*Dr Fox Effect*](https://en.wikipedia.org/wiki/Dr._Fox_effect), the idea that "seductive" <a id="seductive"></a>lecturers, even when not delivering good content, would receive higher ratings from students. Behaving in a way that seems like you are a good teacher might cause students to rate you as a good teacher, even if you're not delivering the content that should be an important part of their assessment of you. The findings in this case were, unsurprisingly to me, that combining the most seductive lecturing styles with high content levels seemed to lead to higher achievement and students ratings.
 
 ## Questions
 'Supply side': scientists should be quick to criticise their own work when it is merited. What should be do about the 'demand side', the skills and knowledge of citizens to engage with and judge scientific research?
 
-- The goal of science education should be to develop the competent outsides (Noah Feinstein), not the incompetent insider.
+- The goal of science education should be to develop the "competent outsider" (See "Outside the pipeline: Reimagining science education for nonscientists" - [paywall journal link](http://science.sciencemag.org/content/340/6130/314), [free article that summarises some ideas](http://www.metanexus.net/essay/how-be-competent-outsider) ), not the "incompetent insider".
+    - On current science ed practice: "it is not clear that these campaigns have enhanced people’s ability to function in a world where conflicting health advice clutters the Internet, research is filtered through political screens, and the media strips context from scientific claims."
+    - This article really supports the efforts and changes we've been making in Stats 10x to develop our students! And of course, we are both [seductive](#seductive) and high content.
 - Scientific literacy for citizenship is different from scientific literacy for being a scientist.
 - How does science establish trustworthiness?
-    - Gavin made a connection to IB 'Theory of Knowledge' unit
+    - Gavin made a connection to [IB 'Theory of Knowledge' unit](http://www.ibo.org/programmes/diploma-programme/curriculum/theory-of-knowledge/what-is-tok/)
     - "Learning how to know"
 - Who has paid for the study a statistically significant predictor of success of drug trial.
 
@@ -124,7 +126,7 @@ I think this was via my stepdad, something his father said perhaps.
 # Book recommendations
 - [Thinking, Fast and Slow by Daniel Kahneman](https://www.goodreads.com/book/show/14062004-thinking-fast-and-slow)
 - [Homo Deus by Yuval Noah Harari](https://www.goodreads.com/book/show/31138556-homo-deus)
--[Sapiens also by Yuval Noah Harari](https://www.goodreads.com/book/show/23692271-sapiens)
+- [Sapiens also by Yuval Noah Harari](https://www.goodreads.com/book/show/23692271-sapiens)
 
 # <a id="othertalks"></a>Other talks Rainer is giving
 - [**October 11**: Philosophy seminar 4pm Wednesday 11 Oct, Arts 2, 18 Symonds St (207-501)](http://www.arts.auckland.ac.nz/en/about/schools-in-the-faculty-of-arts/school-of-humanities/philosophy/seminar-series.html)
