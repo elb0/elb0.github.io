@@ -13,6 +13,8 @@ The University of Auckland brought Senior Professor Rainer Bromme over through t
 ## Liza's one sentence summary
 The fear that trust in experts is eroding has been rising since Brexit and Trump, and while Bromme shows many positive results in surveys on trust in scientists, he also demonstrates that the epistemic climate needs to be researched further and extended beyond just the idea of 'trust'.
 
+![Senior Professor Rainer Bromme is really nice]({{ site.baseurl }}/images/rainerbromme.jpg)
+
 ## Kinds of problems which might impact on public trust
 - Intentional deception
     - fabrication and falsification
@@ -25,7 +27,7 @@ The fear that trust in experts is eroding has been rising since Brexit and Trump
 
 While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. http://www.nature.com/news/2011/111005/full/478026a.html
 
-![What can impact public trust?]({{ site.baseurl }}/images/publicdistrust.png)
+![What can impact public trust?]({{ site.baseurl }}/images/publictrust.png)
 
 ## The V&A Study in Sweden (2014)
 Study investigated confidence in research and experts, also asked broken down by specific disciplines.
@@ -124,8 +126,7 @@ I think this was via my stepdad, something his father said perhaps.
 - [Homo Deus by Yuval Noah Harari](https://www.goodreads.com/book/show/31138556-homo-deus)
 -[Sapiens also by Yuval Noah Harari](https://www.goodreads.com/book/show/23692271-sapiens)
 
-# Other talks Rainer is giving
-{#othertalks}
+# <a id="othertalks"></a>Other talks Rainer is giving
 - [**October 11**: Philosophy seminar 4pm Wednesday 11 Oct, Arts 2, 18 Symonds St (207-501)](http://www.arts.auckland.ac.nz/en/about/schools-in-the-faculty-of-arts/school-of-humanities/philosophy/seminar-series.html)
 - [**October 19**: Between certainty and doubt - What citizens (need to) know in order to cope with science based expert knowledge, public lecture](http://www.education.auckland.ac.nz/en/about/events/events-2017/10/rainer-bromme-between-certainty-and-doubt.html)
 - [**October 25**: Te Pūnaha Matatini Lecture: The ingredients of informed trust, public lecture at Auckland Museum](http://www.aucklandmuseum.com/whats-on/evenings/the-ingredients-of-informed-trust)
