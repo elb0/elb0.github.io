@@ -25,7 +25,7 @@ The fear that trust in experts is eroding has been rising since Brexit and Trump
     - weakness of theory and/or methods and/or data of the original study OR of the replication itself
     - issue under study is not consistent across time, culture, contexts
 
-While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. [http://www.nature.com/news/2011/111005/full/478026a.html]()
+While there is no evidence that intentional deception is decreasing, there has been an increase in retractions in recent years. [http://www.nature.com/news/2011/111005/full/478026a.html]
 
 ![What can impact public trust?]({{ site.baseurl }}/images/publictrust.png)
 
