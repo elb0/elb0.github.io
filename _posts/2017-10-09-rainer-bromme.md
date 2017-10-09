@@ -1,23 +1,23 @@
 ---
 layout: post
-title: "Fraudulent results and failed replications: The effect of flawed research on the public's trust in science"
+title: Rainer Bromme on trust in science
 tag:
   - event-notes
   - book-recommendations
 ---
 
-*COMPASS Seminar Series Talk by Senior Professor Rainer Bromme, University of Münster, 2017-10-09*
+Notes from a fantastic talk by Senior Professor Rainer Bromme called "Fraudulent results and failed replications: The effect of flawed research on the public's trust in science". Bromme is a Senior Professor (like Professor Emeritus) in Psychology at the University of Münster and he was speaking at the [COMPASS Seminar Series](http://www.arts.auckland.ac.nz/en/about/our-research/research-centres-and-archives/compass/compass-seminars.html).
 
-The University of Auckland has brought Senior Professor Rainer Bromme through the Distinguished Visitor award scheme. He is being hosted by [Professor Gavin Brown](https://unidirectory.auckland.ac.nz/profile/gt-brown) and will be giving several [other talks](#othertalks).
+The University of Auckland brought Senior Professor Rainer Bromme over through the Distinguished Visitor award scheme. He is being hosted by [Professor Gavin Brown](https://unidirectory.auckland.ac.nz/profile/gt-brown) and will be giving several [other talks](#othertalks) that are well worth checking out. The COMPASS Seminar series is also really worth including in your seminar roster and our nibbles are rather good. (I may be biased here.)
 
 ## Liza's one sentence summary
-Fear that trust in experts is eroding has been rising since Brexit and Trump, and while Bromme shows many positive results in surveys on trust in scientists, he also demonstrates that the epistemic climate needs to be researched further and beyond just the idea of 'trust'.
+The fear that trust in experts is eroding has been rising since Brexit and Trump, and while Bromme shows many positive results in surveys on trust in scientists, he also demonstrates that the epistemic climate needs to be researched further and extended beyond just the idea of 'trust'.
 
 ## Kinds of problems which might impact on public trust
 - Intentional deception
     - fabrication and falsification
         - autism and vaccines
-    - plagiarism (two former German secretaries of state - defence and science/education)
+    - plagiarism (two former German secretaries of state - defense and science/education)
 - Failed replications
     - questionable research practice
     - weakness of theory and/or methods and/or data of the original study OR of the replication itself
