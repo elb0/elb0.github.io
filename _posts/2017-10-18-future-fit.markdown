@@ -46,6 +46,8 @@ The team talks about 21C skills in the following framework: use, know, be and gr
 
 ![From the 21C website]({{ site.baseurl }}/images/21C_Skills_Lab_usebeknow.jpeg)
 
+*From https://www.21cskillslab.com/what-21c-skills/*
+
 They are working with [ACT's](http://www.act.org/) Tessera product to develop evidence based ways to assess these skills. We are the first outside the US to use this to assess six skills. So far a 4000 student pilot with 12 schools/universities has been run.
 
 **Goal**: By 2021 all NZ intermediate and secondary schools will be assessing social and emotional skills.
@@ -123,13 +125,13 @@ Hobsonville has "form classes on steroids". These are about a third of student t
 
 The rest of student time has slightly more traditional learning modules, but these are still very integrated, because that is what the NZ curriculum says they should be doing. "There is nothing stopping us transforming the education system in New Zealand". Need to take our families and communities with us. We already have a very flexible qualification pathway.
 
-Shout out to Richard Wells and development of qualification standards.
+Shout out to Richard Wells and his work on the development of our curriculum.
 
 *Gotta say, little ol' Te Awamutu was well ahead of the curve with the SPLICE project and Rosetown Learning Community of the late 2000s. Great old school (in both senses) video [here.](https://www.youtube.com/watch?v=AJ1W9klmfsU).*
-![You Have a Message - students have been asking to engage with their communities for a long time]({{ site.baseurl }}/images/community-learning.png)
-*As part of the project we read through the draft curriculum document, and I remember being so excited adn delighted by it. This really connected with a lot of the conversation tonight. We have some incredible frameworks, now it is just a matter of support and resources.*
+<a href="https://www.youtube.com/watch?v=AJ1W9klmfsU">![You Have a Message - students have been asking to engage with their communities for a long time]({{ site.baseurl }}/images/community-learning.png)</a>
+*As part of the project we read through the draft curriculum document, and I remember being so excited and delighted by it. This really connected with a lot of the conversation tonight. We have some incredible frameworks, now it is just a matter of support and resources.*
 
-![Lefy-Liza about to draw all over the draft curriculum]({{ site.baseurl }}/images/draft-curric.png)
+<a href="https://www.youtube.com/watch?v=AJ1W9klmfsU">![Lefy-Liza about to draw all over the draft curriculum]({{ site.baseurl }}/images/draft-curric.png)</a>
 
 ### Audience Questions
 
