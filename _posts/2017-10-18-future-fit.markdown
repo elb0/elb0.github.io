@@ -2,6 +2,8 @@
 layout: "post"
 title: "Future Fit"
 date: "2017-10-18 17:17"
+tag:
+  - event-notes
 ---
 
 Are our kids future fit? Notes from the [21C Skills Lab](https://www.21cskillslab.com/) public seminar on developing #FutureFit tamariki, some of my own musings and a blast from the past video that includes me from high school.
