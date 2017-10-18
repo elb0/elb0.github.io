@@ -8,8 +8,12 @@ tag:
 
 Are our kids future fit? Notes from the [21C Skills Lab](https://www.21cskillslab.com/) public seminar on developing #FutureFit tamariki, some of my own musings and a blast from the past video that includes me from high school.
 
+---
+
 ## Liza's one sentence summary
-Great kiwis are working hard to make sure our tamariki have the skills to navigate the high-tech future world as well-rounded competent people, but we still need all hands on deck to get them there.
+Great kiwis are working hard to make sure our tamariki have the skills to navigate the high-tech future world as well-rounded, competent people, but we still need all hands on deck to get them there.
+
+---
 
 I live Tweeted the event on the Talent Solutions account, so you can check out this thread for the TL;DR version.
 
