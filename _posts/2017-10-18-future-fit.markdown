@@ -23,9 +23,9 @@ I live Tweeted the event on the Talent Solutions account, so you can check out t
 See the end of this post for some brief thoughts on how I think this connects to mental health.
 
 ## Favourite quote of the night:
-  "My 13 years old can do better powerpoint presentations than most of my team can do." - **Vic Crone**
+  "My 13 years old can do better PowerPoint presentations than most of my team can do." - **Vic Crone**
 
-  Though this is closely followed by Marc Englands comments on [starting work](#Marcstart).
+  Though this is closely followed by Marc England's comments on [starting work](#Marcstart).
 
 ## Introduction and mihi
 
@@ -35,7 +35,7 @@ Faye Langdon and Justine Munro are the co-founders of the 21C Skills Lab. I stil
 
 ### Welcome from Dean of AUT Business School, Professor Kate Kearins
 
-AUT is setting up an new business degree. I'm an uniron buzzword lover, and Kearins didn't disappoint. Young people will have "portfolio careers" and be "jungle gyming" instead of climbing the career ladder. They want to turn out "T-shaped" graduates, which are grads with a depth of knowledge as well as being able to reach out across disciplines and be "cross-functional".
+AUT is setting up an new business degree. I'm an unironic buzzword lover, and Kearins didn't disappoint. Young people will have "portfolio careers" and be "jungle gyming" instead of climbing the career ladder. They want to turn out "T-shaped" graduates, which are grads with a depth of knowledge as well as being able to reach out across disciplines and be "cross-functional".
 
 ## What is 21C Skills Lab?
 This has been a launch week for 21C Skills Lab. Their core question is: Are the skills we're teaching young New Zealanders the skills that the 21st century needs? (What skills are these? And follow-up, how do we assess these?)
