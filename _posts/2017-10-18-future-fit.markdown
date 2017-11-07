@@ -149,7 +149,7 @@ As a green-field school everyone knew what they were getting in to. The changes 
 
 **Moving away from NCEA?**
 No, still aiming for high quality level 2 and 3 (where appropriate) NCEA qualifications, but also widening measures of success.
-NZQA is also trialling certifying micro-credentials. Self-driving car engineering example.
+NZQA is also trialing certifying micro-credentials. Self-driving car engineering example.
 
 **Justine to Marc: What is the role of business in supporting schools? How can be break down the boundaries?**
 There was the SchoolGen project - solar panels on roofs of schools and doing teaching about energy and power. It ran for 10 years but they have stopped it now. They will launch a new project in January. Curriculum material created about business (energy and gas).
@@ -164,7 +164,7 @@ There was the SchoolGen project - solar panels on roofs of schools and doing tea
 **Vic** "The majority of the country has no flippin' idea what the country is going to look like in 10 years." Don't be shy, we're going on a journey together.
 
 
-"My 13 years old can do better powerpoint presentations than most of my team can do." - **Vic Crone**
+"My 13 years old can do better PowerPoint presentations than most of my team can do." - **Vic Crone**
 
 "Students should be working in real world contexts." - **Jonathan Martin**
 
