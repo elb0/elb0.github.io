@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: /images/
 
-# If you're here from the modern data workshop, Hi! ;)
+# If you're here from Stats 100, kia ora! ;)
