@@ -1,4 +1,5 @@
 User-agent: *
 Disallow: /images/
 
-# If you're here from Stats 100, kia ora! ;)
+# If you're here from R-Ladies Auckland, kia ora! ;)
+# Thanks to Anna, Kim and Anjali for organising this <3
