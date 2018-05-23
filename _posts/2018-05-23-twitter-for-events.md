@@ -71,42 +71,35 @@ If you are attending an event: If you’re at someone else’s event you can “
     b.	It makes it easy for someone to see everything you’ve said in one place.
 
 ### How Twitter sits alongside your event timeline
-*1.	Before the event **
 
-    a.	Pick a hashtag  
+####Before the event
+1.	Pick a hashtag. 
+    a. Short but memorable is the goal!
+    b. Search it first to make sure it isn’t being used for something else already
+    c. Does this event needs its own hashtag, or is it part of a series of events that will all share a hashtag?
+    d. Does the year need to be included (usually only for annual events, and I’m not sure they’re always necessary there)
+        
+2. Include the hashtag along with event promotion (e.g.  emails, posters etc.). [Get Twitter logos here.](https://brand.twitter.com/en.html)
     
-*	Short but memorable is the goal!
-        
-*	Search it first to make sure it isn’t being used for something else already
-        
-*	Does this event needs its own hashtag, or is it part of a series of events that will all share a hashtag?
-        
-*	Does the year need to be included (usually only for annual events, and I’m not sure they’re always necessary there)
-        
-    b.	Include the hashtag along with event promotion (e.g.  emails, posters etc.). [Get Twitter logos here.](https://brand.twitter.com/en.html)
+3. Find out if any of the panelists, speakers etc. use Twitter
     
-    c.	Find out if any of the panelists, speakers etc. use Twitter
-    
-    d.	Promote your event on Twitter and introduce the hashtag, tag any Twitter using speakers – it seems speakers often appreciate this promotion and will help share it on, but now in a way connected to you with your hashtag
+4.  your event on Twitter and introduce the hashtag, tag any Twitter using speakers – it seems speakers often appreciate this promotion and will help share it on, but now in a way connected to you with your hashtag
 
-**2.	During the event**
-
-    a\.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers    
+####2. During the event
+    a.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers    
            
-  b.	Retweet great Tweets, like other Tweets and follow people engaging with you if appropriate
+    b.	Retweet great Tweets, like other Tweets and follow people engaging with you if appropriate
   
-  c.	If you can have someone taking photos to Tweet live, even better!
+    c.	If you can have someone taking photos to Tweet live, even better!
   
-  d.	Have all your commentary in a Thread.  
+    d.	Have all your commentary in a Thread.
 
-
-**3.	After the event  **
-
-  a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.   
+####3. After the event
+    a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.   
   
-  b.	Collect any useful comments or advice that arose, this can be a useful way to get feedback on your event.  
+    b.	Collect any useful comments or advice that arose, this can be a useful way to get feedback on your event.  
   
-  c.	Consider creating Moments with yours and others Tweets.  This helps create a summary of the event.   
+    c.	Consider creating Moments with yours and others Tweets.  This helps create a summary of the event.   
 
 ## Other things to consider
 
