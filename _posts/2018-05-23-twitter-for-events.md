@@ -72,7 +72,7 @@ If you are attending an event: If you’re at someone else’s event you can “
 
 ### How Twitter sits alongside your event timeline
 
-####Before the event
+**Before the event**  
 1.	Pick a hashtag. 
     a. Short but memorable is the goal!
     b. Search it first to make sure it isn’t being used for something else already
@@ -85,7 +85,7 @@ If you are attending an event: If you’re at someone else’s event you can “
     
 4.  your event on Twitter and introduce the hashtag, tag any Twitter using speakers – it seems speakers often appreciate this promotion and will help share it on, but now in a way connected to you with your hashtag
 
-####2. During the event
+**During the event**  
     a.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers    
            
     b.	Retweet great Tweets, like other Tweets and follow people engaging with you if appropriate
@@ -94,7 +94,7 @@ If you are attending an event: If you’re at someone else’s event you can “
   
     d.	Have all your commentary in a Thread.
 
-####3. After the event
+**After the event**  
     a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.   
   
     b.	Collect any useful comments or advice that arose, this can be a useful way to get feedback on your event.  
