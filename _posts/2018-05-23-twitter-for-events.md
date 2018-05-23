@@ -74,6 +74,7 @@ If you are attending an event: If you’re at someone else’s event you can “
 
 **Before the event**  
 1.	Pick a hashtag. 
+
     a. Short but memorable is the goal!
     b. Search it first to make sure it isn’t being used for something else already
     c. Does this event needs its own hashtag, or is it part of a series of events that will all share a hashtag?
@@ -86,19 +87,19 @@ If you are attending an event: If you’re at someone else’s event you can “
 4.  your event on Twitter and introduce the hashtag, tag any Twitter using speakers – it seems speakers often appreciate this promotion and will help share it on, but now in a way connected to you with your hashtag
 
 **During the event**  
-    a.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers    
-           
+    a.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers
+
     b.	Retweet great Tweets, like other Tweets and follow people engaging with you if appropriate
-  
+
     c.	If you can have someone taking photos to Tweet live, even better!
-  
+
     d.	Have all your commentary in a Thread.
 
 **After the event**  
-    a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.   
-  
+    a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.
+
     b.	Collect any useful comments or advice that arose, this can be a useful way to get feedback on your event.  
-  
+
     c.	Consider creating Moments with yours and others Tweets.  This helps create a summary of the event.   
 
 ## Other things to consider
