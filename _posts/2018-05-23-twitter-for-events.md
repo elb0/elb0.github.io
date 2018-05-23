@@ -47,14 +47,14 @@ If you're running an event, Twitter can be a great way to promote it, engage wit
     a\.	 A *pure Retweet* that will appear in your followers feed, looking like the original Tweet but with a note that they are seeing it because you Retweeted it (signified by the square arrow)
 
   ![Example of a pure Retweet]({{ site.baseurl }}/images/retweet.png)    
-    b\.	A *quote Retweet* is when you make an additional comment on the Tweet.
+        b\.	A *quote Retweet* is when you make an additional comment on the Tweet.
 
   ![Example of a quote Retweet]({{ site.baseurl }}/images/quote-retweet.png)
   
 5\.	**Pinning** Tweets lets you keep announcements, events or other popular Tweets appearing at the top of your profile.
 
 6\.	**Moments** are a feature that let you group together Tweets from a range of users and showcase highlights from an event or on a topic.    
-    a\.	Here is an example of a moment I made [after an event](https://twitter.com/i/moments/976335217433624578)
+        a\.	Here is an example of a moment I made [after an event](https://twitter.com/i/moments/976335217433624578)
 
 ## Twitter for events
 Twitter benefits: it’s free, it encourages connections among attendees, allows people who could not attend the event to follow it, and gives you another quantifiable measure of engagement.
