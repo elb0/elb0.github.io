@@ -39,27 +39,29 @@ If you're running an event, Twitter can be a great way to promote it, engage wit
 
     a.	A little effort searching which types of hashtags are commonly used among the audience you’re seeking can be really helpful
 
-3.	Threads allow you to string together related tweets.  This comes in handy to tell a longer story or provide live commentary on an event.  They help group together Tweets on a topic and make it easy for people to follow an event.    
+3.	Threads allow you to string together related tweets.  This comes in handy to tell a longer story or provide live commentary on an event.  They help group together Tweets on a topic and make it easy for people to follow an event.
+
     a.	An example of an event thread I’ve done can be found [here](https://twitter.com/Liza_Bolton/status/976332866626895873).
     
     b.	To add to a thread, you can click the “Add another Tweet” button below your Tweet.
   
  ![How to add to a thread]({{ site.baseurl }}/images/add-thread.png) 
  
-4\.	Retweeting is sharing other people’s Tweet.  At time of writing you could do two types of Retweets:   
-   
-    a.	 A pure Retweet that will appear in your followers feed, looking like the original Tweet but with a note that they are seeing it because you Retweeted it (signified by the square arrow)
+4\.	Retweeting is sharing other people’s Tweet.  At time of writing you could do two types of Retweets:
+
+    a\.	 A pure Retweet that will appear in your followers feed, looking like the original Tweet but with a note that they are seeing it because you Retweeted it (signified by the square arrow)
 
   ![Example of a pure Retweet]({{ site.baseurl }}/images/retweet.png)
 
-    b.	A Quote Retweet is when you make an additional comment on the Tweet.
+    b\.	A Quote Retweet is when you make an additional comment on the Tweet.
 
   ![Example of a quote Retweet]({{ site.baseurl }}/images/quote-retweet.png)
   
-5\.	Pinning Tweets lets you keep announcements, events or other popular Tweets appearing at the top of your profile.   
-6\.	Moments are a feature that let you group together Tweets from a range of users and showcase highlights from an event or on a topic.   
+5\.	Pinning Tweets lets you keep announcements, events or other popular Tweets appearing at the top of your profile.
 
-    a.	Here is an example of a moment I made [after an event](https://twitter.com/i/moments/976335217433624578)
+6\.	Moments are a feature that let you group together Tweets from a range of users and showcase highlights from an event or on a topic.
+
+    a\.	Here is an example of a moment I made [after an event](https://twitter.com/i/moments/976335217433624578)
 
 ## Twitter for events
 Twitter benefits: it’s free, it encourages connections among attendees, allows people who could not attend the event to follow it, gives you another quantifiable measure of engagement.
@@ -69,17 +71,17 @@ If you are attending an event: If you’re at someone else’s event you can “
     b.	It makes it easy for someone to see everything you’ve said in one place.
 
 ### How Twitter sits alongside your event timeline
-1.	Before the event 
+*1.	Before the event **
 
     a.	Pick a hashtag  
     
-        *	Short but memorable is the goal!
+*	Short but memorable is the goal!
         
-        *	Search it first to make sure it isn’t being used for something else already
+*	Search it first to make sure it isn’t being used for something else already
         
-        *	Does this event needs its own hashtag, or is it part of a series of events that will all share a hashtag?
+*	Does this event needs its own hashtag, or is it part of a series of events that will all share a hashtag?
         
-        *	Does the year need to be included (usually only for annual events, and I’m not sure they’re always necessary there)
+*	Does the year need to be included (usually only for annual events, and I’m not sure they’re always necessary there)
         
     b.	Include the hashtag along with event promotion (e.g.  emails, posters etc.). [Get Twitter logos here.](https://brand.twitter.com/en.html)
     
@@ -87,17 +89,9 @@ If you are attending an event: If you’re at someone else’s event you can “
     
     d.	Promote your event on Twitter and introduce the hashtag, tag any Twitter using speakers – it seems speakers often appreciate this promotion and will help share it on, but now in a way connected to you with your hashtag
 
-2.	During the event
+**2.	During the event**
 
-    a.	If possible have someone monitoring Twitter through a dashboard like Hootsuite
-    
-        i.	Good streams include:
-        
-           *	Your hashtag
-           
-           *	Your mentions
-           
-           *	Your new followers
+    a\.	If possible have someone monitoring Twitter through a dashboard like Hootsuite. Good streams include: your hashtag, your mentions and your new followers    
            
   b.	Retweet great Tweets, like other Tweets and follow people engaging with you if appropriate
   
@@ -106,7 +100,7 @@ If you are attending an event: If you’re at someone else’s event you can “
   d.	Have all your commentary in a Thread.  
 
 
-3.	After the event
+**3.	After the event  **
 
   a.	Keep an eye on your hashtag, some people will only make a comment at the end of the event.   
   
@@ -115,15 +109,16 @@ If you are attending an event: If you’re at someone else’s event you can “
   c.	Consider creating Moments with yours and others Tweets.  This helps create a summary of the event.   
 
 ## Other things to consider
+
 1.	Make   a Twitter list of researchers, staff, collaborators or something, so people can follow them.   
 
 2.	If one person is going to take on the Tweeting, some accounts include a “Tweets by @soandso” in their bio.  
 
-  a.	You can use [Hootsuite](https://hootsuite.com/plans/free) to schedule Tweets to go out at a later time
+    a.	You can use [Hootsuite](https://hootsuite.com/plans/free) to schedule Tweets to go out at a later time
   
-  b.	Having a consistent presence helps people decide whether you are worth following
+    b.	Having a consistent presence helps people decide whether you are worth following
   
-  c.	If you write and schedule 2 – 4 Tweets for a week, you can set and semi-forget for a while. It is still worth monitoring a little in case anyone is asking you questions/being inappropriate/doing something that otherwise needs attention
+    c.	If you write and schedule 2 – 4 Tweets for a week, you can set and semi-forget for a while. It is still worth monitoring a little in case anyone is asking you questions/being inappropriate/doing something that otherwise needs attention
   
 3.	Have you looked at Twitter analytics?
 
