@@ -19,7 +19,7 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 
 *Last updated*: 11 Jul approx 1:10pm Kyoto time.
 
-Here are some libraries we'll use.
+Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).)
 
 {% highlight r %}
 library(twitteR)
