@@ -31,7 +31,10 @@ library(stringr)
 
 Just one thing to be careful of, you'll need to get your own twitter keys. [This might be quite helpful](https://medium.com/@GalarnykMichael/accessing-data-from-twitter-api-using-r-part1-b387a1c7d3e). I had to reset my keys to get the code to work. Not sure why, but [others have had the same issue](https://github.com/geoffjentry/twitteR/issues/74).
 
-`# setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)`
+{% highlight r %}
+# You'll need to replace the bits in here
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+{% endhighlight %}
 
 The Tweet that inspired this shared a Tweet that compared useR (a conference about using the R statistical programming language in Brisbane, Australia in 2018), with ICLM (a conference about machine learning in Stockholm, Sweden in 2018). The below chunk gets the data for these two conferences and for the 10th International Conference on Teaching Statistics in Kyoto, Japan.
 
@@ -123,7 +126,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topretweeticots$id)%60), [ICLM Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topretweeticml$id)%60) and [useR Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topretweetuser$id)%60).
+Check out the most retweeted [ICOTS Tweet](https://twitter.com/anyuser/status/1016832944357306368), [ICLM Tweet](https://twitter.com/anyuser/status/1016891816937865216) and [useR Tweet](https://twitter.com/anyuser/status/1015968162494517248).
 
 ### The most favourites?
 
@@ -143,7 +146,7 @@ topfavuser = topfav %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most favourited [ICOTS Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topfavicots$id)%60), [ICLM Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topfavicml$id)%60) and [useR Tweet]('paste0(%22https://twitter.com/anyuser/status/%22,%20topfavuser$id)%60).
+Check out the most favourited [ICOTS Tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICLM Tweet](https://twitter.com/anyuser/status/1015571416484405248) and [useR Tweet](https://twitter.com/anyuser/status/1016604921154584576).
 
 More from ICOTS
 ---------------
