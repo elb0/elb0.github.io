@@ -6,6 +6,7 @@ tags:
   - R-code
   - social-media
 ---
+
 A tweet comparing ICML and useR got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
 
 <blockquote class="twitter-tweet" data-lang="en">
@@ -16,6 +17,7 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+-   [Number of tweets by conference](#number-of-tweets-by-conference)
 -   [How about number of retweets by conference?](#how-about-number-of-retweets-by-conference)
 -   [Number of favourites?](#number-of-favourites)
 -   [What about percentage of tweets getting favourited or retweeted?](#what-about-percentage-of-tweets-getting-favourited-or-retweeted)
@@ -24,11 +26,10 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 -   [Emojis ❤️](#emojis)
 -   [Checking if we can scrape the emoji lists](#checking-if-we-can-scrape-the-emoji-lists)
 -   [Scraping the emoji lists](#scraping-the-emoji-lists)
--   [Is this just because of emoji spammers?](#is-this-just-because-of-emoji-spammers)
 -   [More from ICOTS](#more-from-icots)
 -   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
 
-*Last updated:* 12 Jul approx 9:33pm Kyoto time.
+*Last updated:* 12 Jul approx 11:15pm Kyoto time.
 
 Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
 
@@ -44,6 +45,7 @@ library(robotstxt)
 library(rvest)
 library(tibble)
 library(data.table)
+library(DT)
 {% endhighlight %}
 
 Just one thing to be careful of, you'll need to get your own twitter keys. [This might be quite helpful](https://medium.com/@GalarnykMichael/accessing-data-from-twitter-api-using-r-part1-b387a1c7d3e). I had to reset my keys to get the code to work. Not sure why, but [others have had the same issue](https://github.com/geoffjentry/twitteR/issues/74).
@@ -59,9 +61,9 @@ The tweet that inspired this shared a tweet that compared useR (a conference abo
 Also note, the `n =` were chosen by trial and error. Very sophisticated.
 
 {% highlight r %}
-icots = searchTwitter('#icots10', n = 1000)
-user = searchTwitter('#useR2018', n = 2000)
-icml = searchTwitter('#ICML2018', n = 2500)
+icots = searchTwitter('#icots10', n = 1100)
+user = searchTwitter('#useR2018', n = 3200)
+icml = searchTwitter('#ICML2018', n = 4000)
 
 icots_tweets = twListToDF(icots) %>%
   mutate(Hashtag = "#ICOTS10")
@@ -92,9 +94,7 @@ all_tweets = rbind(icots_tweets, user_tweets, icml_tweets) %>%
   mutate(date = format(created, format="%Y-%m-%d")) %>%
   filter(!str_detect(text, "@EthereumLimited:")) %>%
   filter(!str_detect(text, "Ethlimited"))
-{% endhighlight %}
 
-{% highlight r %}
 all_noRT = rbind(icots_noRT, user_noRT, icml_noRT) %>%
   mutate(date = format(created, format="%Y-%m-%d")) %>%
   filter(!str_detect(text, "@EthereumLimited:")) %>%
@@ -102,6 +102,8 @@ all_noRT = rbind(icots_noRT, user_noRT, icml_noRT) %>%
 {% endhighlight %}
 
 Let's take a look!
+
+### Number of tweets by conference
 
 {% highlight r %}
 all_tweets %>%
@@ -196,7 +198,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017390498275909634), [ICML tweet](https://twitter.com/anyuser/status/1017383089415380993) and [useR tweet](https://twitter.com/anyuser/status/1017379649549144067).
+Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017403257851822080), [ICML tweet](https://twitter.com/anyuser/status/1017411760339341312) and [useR tweet](https://twitter.com/anyuser/status/1017410998725050368).
 
 ### The most favourites?
 
@@ -216,15 +218,15 @@ topfavuser = topfav %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICML tweet](https://twitter.com/anyuser/status/1017059295052140544) and [useR tweet](https://twitter.com/anyuser/status/1016912611529510913).
+Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1017244182035849216), [ICML tweet](https://twitter.com/anyuser/status/1017059295052140544) and [useR tweet](https://twitter.com/anyuser/status/1014967711036829696).
 
 ### Emojis ❤️
 
 What better place to explore emojis from than the country that gave us the language that gave us the word! Ya follow? Emoji is a Japanese word that, if a quick Google search is to be believed, means "picture character".
 
-Anna Fergusson, \[@annafergussonnz\](<https://twitter.com/annafergussonnz>), and I, in our talk on [modern data in a large introductory statistics course](https://annafergusson.github.io/paristergram/) based on the awesome work Anna has been driving, tried to quickly show how emoji analysis can be a bit of fun. So let's keep that up here.
+Anna Fergusson, (@annafergussonnz)\[<https://twitter.com/annafergussonnz>\], and I, in our talk on (modern data in a large introductory statistics course)\[<https://annafergusson.github.io/paristergram/>\] based on the awesome work Anna has been driving, tried to quickly show how emoji analysis can be a bit of fun. So let's keep that up here.
 
-This first section is mostly just copied from the work Anna and I did that will be up on the \[Parisgram site\]((<https://annafergusson.github.io/paristergram/>) at somepoint. The emoji handling is not very elegant right now.
+This first section is mostly just copied from the work Anna and I did that will be up on the (Parisgram site)\[<https://annafergusson.github.io/paristergram/>\] at somepoint. The emoji handling is not very elegant right now.
 
 There is a table provided by the Unicode organisation that has the emoji, and an additional one that details skintone variations. These also provide a text description and groups the emoji into wider groups, like flags, buildings, types of facial expression etc. It would be ideal to have that information in R to work with directly, so I want to scrape the tables into R. I can check if this seems to be allowed by using the `robotstxt` package. There are a range of other ways to get databases like this, this just seemed easiest for this case.
 
@@ -369,11 +371,13 @@ emoji_prop_user = sum(!is.na(emoji_spread_user$`1`))/dim(unique_user)[1]
 emoji_prop_icml = sum(!is.na(emoji_spread_icml$`1`))/dim(unique_icml)[1]
 {% endhighlight %}
 
-So 6% of ICOTS tweets had at least one emoji in them, 12% of useR tweets and 4% of ICML tweets.
+So 7% of ICOTS tweets had at least one emoji in them, 13% of useR tweets and 3% of ICML tweets.
 
 #### Which emoji were the most popular?
 
 This is a not very elegant function to count how many times each emoji in the emoji\_ref dataframe appears in the text you're analysing (in the form of the all columns from the emoji\_spread dataset). I'm also not 100% sure the tryCatch is set up properly - it needs a tryCatch because I keep getting errors for the keycap: \* emoji.
+
+The second function doesn't count repeats of emoji in that same tweet. I know at least one of my tweets had a gratuitous number of hand clap emojis. Will not counting repeats in a tweet change the top used emoji? `str_detect` is quite useful for that.
 
 {% highlight r %}
 emoji_counter = function(data_col, emoji_from_ref){
@@ -383,99 +387,7 @@ emoji_counter = function(data_col, emoji_from_ref){
   )
   return(counts)
 }
-{% endhighlight %}
 
-#### Top \#ICOTS10 emojis
-
-{% highlight r %}
-# This can take a bit of time to run
-emoji_counts_icots = emoji_ref %>%
-  rowwise() %>%
-  mutate(counts = NA) %>%
-  mutate(counts = emoji_counter(emoji_spread_icots$all, emoji)) %>%
-  arrange(number) %>%
-  mutate(rank = round(rank(-counts), 0)) %>%
-  select(-c(character_length, number)) %>%
-  filter(counts > 0) %>%
-  arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_icots
-{% endhighlight %}
-
-    ## # A tibble: 4 x 3
-    ##   emoji short_name                   counts
-    ##   <chr> <fct>                         <int>
-    ## 1 😍    smiling face with heart-eyes      8
-    ## 2 🔥    fire                              6
-    ## 3 👏    clapping hands                    5
-    ## 4 😂    face with tears of joy            3
-
-#### Top \#useR2018 emoji
-
-{% highlight r %}
-emoji_counts_user = emoji_ref %>%
-  rowwise() %>%
-  mutate(counts = NA) %>%
-  mutate(counts = emoji_counter(emoji_spread_user$all, emoji)) %>%
-  arrange(number) %>%
-  mutate(rank = round(rank(-counts), 0)) %>%
-  select(-c(character_length, number)) %>%
-  filter(counts > 0)  %>%
-  arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_user
-{% endhighlight %}
-
-    ## # A tibble: 4 x 3
-    ##   emoji short_name                   counts
-    ##   <chr> <fct>                         <int>
-    ## 1 🏉    rugby football                   18
-    ## 2 📦    package                          16
-    ## 3 🌧    cloud with rain                   9
-    ## 4 😍    smiling face with heart-eyes      7
-
-#### Top \#ICML2018 emoji
-
-{% highlight r %}
-emoji_counts_icml = emoji_ref %>%
-  rowwise() %>%
-  mutate(counts = NA) %>%
-  mutate(counts = emoji_counter(emoji_spread_icml$all, emoji)) %>%
-  arrange(number) %>%
-  mutate(rank = round(rank(-counts), 0)) %>%
-  select(-c(character_length, number)) %>%
-  filter(counts > 0)  %>%
-  arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_icml
-{% endhighlight %}
-
-    ## # A tibble: 6 x 3
-    ##   emoji short_name                      counts
-    ##   <chr> <fct>                            <int>
-    ## 1 🔥    fire                                 8
-    ## 2 😂    face with tears of joy               3
-    ## 3 😄    grinning face with smiling eyes      2
-    ## 4 🤔    thinking face                        2
-    ## 5 🙌    raising hands                        2
-    ## 6 ✈    airplane                             2
-
-Previous tops here:
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Top 5ish emojis from three different conferences (as of 15 mins ago). Ranked 1-5ish, left to right, in ( ) means equal counts.<a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> 😍👏(😂🐱🎨🎼)<a href="https://twitter.com/hashtag/useR2018?src=hash&amp;ref_src=twsrc%5Etfw">\#useR2018</a>: 📦👌(😍🌧️)<a href="https://twitter.com/hashtag/ICML2018?src=hash&amp;ref_src=twsrc%5Etfw">\#ICML2018</a>: 🔥😂(😁🤔🙌✈️✔️)<br><br>Code: <a href="https://t.co/yixpezWy8p">https://t.co/yixpezWy8p</a><br>Of course, this tweet will mess it up!
-</p>
-— Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1017216200697212928?ref_src=twsrc%5Etfw">July 12, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-### Is this just because of emoji spammers?
-
-I know at least one of my tweets had a gratuitous number of hand clap emojis. What if we limit to one per Tweet? Does that change the top used emoji? `str_detect` is quie useful for that.
-
-{% highlight r %}
 emoji_counter_single = function(data_col, emoji_from_ref){
   counts = tryCatch({
     sum(str_detect(data_col, emoji_from_ref))
@@ -485,86 +397,83 @@ emoji_counter_single = function(data_col, emoji_from_ref){
 }
 {% endhighlight %}
 
-#### Top \#ICOTS10 emojis - less spammy
+You can short by either ranking (`count` or `rank` include repeats in a tweet, `count_single` and `rank_single` don't include repeats within a tweet)
+
+#### Top \#ICOTS10 emojis
 
 {% highlight r %}
 # This can take a bit of time to run
-emoji_counts_icots_ = emoji_ref %>%
+emoji_counts_icots = emoji_ref %>%
   rowwise() %>%
   mutate(counts = NA) %>%
-  mutate(counts = emoji_counter_single(emoji_spread_icots$all, emoji)) %>%
+  mutate(counts = emoji_counter(emoji_spread_icots$all, emoji)) %>%
+  mutate(counts_single = emoji_counter_single(emoji_spread_icots$all, emoji)) %>%
   arrange(number) %>%
   mutate(rank = round(rank(-counts), 0)) %>%
+  mutate(rank_single = round(rank(-counts_single), 0)) %>%
   select(-c(character_length, number)) %>%
   filter(counts > 0) %>%
   arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_icots_
+  select(emoji, short_name, counts, rank, counts_single, rank_single)
+DT::datatable(emoji_counts_icots)
 {% endhighlight %}
 
-    ## # A tibble: 7 x 3
-    ##   emoji short_name                   counts
-    ##   <chr> <fct>                         <int>
-    ## 1 😍    smiling face with heart-eyes      4
-    ## 2 😂    face with tears of joy            3
-    ## 3 ❤    red heart                         2
-    ## 4 🐱    cat face                          2
-    ## 5 🔥    fire                              2
-    ## 6 🎨    artist palette                    2
-    ## 7 🎼    musical score                     2
+<!--html_preserve-->
 
-#### Top \#useR2018 emoji - less spammy
+<script type="application/json" data-for="htmlwidget-fb98d4395036a94a422f">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],["😍","🔥","👏","😂","❤","🐱","⚡","🎨","🎼","😀","🙂","😔","😢","👩","💥","🏫","🗼","🎸","🇫🇷"],["smiling face with heart-eyes","fire","clapping hands","face with tears of joy","red heart","cat face","high voltage","artist palette","musical score","grinning face","slightly smiling face","pensive face","crying face","woman","collision","school","Tokyo tower","guitar","flag: France"],[8,6,5,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,7,7,7,7,7,14,14,14,14,14,14,14,14,14,14],[4,2,1,3,2,2,1,2,2,1,1,1,1,1,1,1,1,1,1],[1,5,14,2,5,5,14,5,5,14,14,14,14,14,14,14,14,14,14]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>emoji<\/th>\n      <th>short_name<\/th>\n      <th>counts<\/th>\n      <th>rank<\/th>\n      <th>counts_single<\/th>\n      <th>rank_single<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<!--/html_preserve-->
+#### Top \#useR2018 emoji
 
 {% highlight r %}
-emoji_counts_user_ = emoji_ref %>%
+emoji_counts_user = emoji_ref %>%
   rowwise() %>%
   mutate(counts = NA) %>%
-  mutate(counts = emoji_counter_single(emoji_spread_user$all, emoji)) %>%
+  mutate(counts = emoji_counter(emoji_spread_icots$all, emoji)) %>%
+  mutate(counts_single = emoji_counter_single(emoji_spread_icots$all, emoji)) %>%
   arrange(number) %>%
   mutate(rank = round(rank(-counts), 0)) %>%
+  mutate(rank_single = round(rank(-counts_single), 0)) %>%
   select(-c(character_length, number)) %>%
-  filter(counts > 0)  %>%
+  filter(counts > 0) %>%
   arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_user_
+  select(emoji, short_name, counts, rank, counts_single, rank_single)
+DT::datatable(emoji_counts_user)
 {% endhighlight %}
 
-    ## # A tibble: 3 x 3
-    ##   emoji short_name                   counts
-    ##   <chr> <fct>                         <int>
-    ## 1 📦    package                          14
-    ## 2 😂    face with tears of joy            6
-    ## 3 😍    smiling face with heart-eyes      5
+<!--html_preserve-->
 
-#### Top \#ICML2018 emoji - less spammy
+<script type="application/json" data-for="htmlwidget-25f3521cd4187faa4b63">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],["😍","🔥","👏","😂","❤","🐱","⚡","🎨","🎼","😀","🙂","😔","😢","👩","💥","🏫","🗼","🎸","🇫🇷"],["smiling face with heart-eyes","fire","clapping hands","face with tears of joy","red heart","cat face","high voltage","artist palette","musical score","grinning face","slightly smiling face","pensive face","crying face","woman","collision","school","Tokyo tower","guitar","flag: France"],[8,6,5,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,7,7,7,7,7,14,14,14,14,14,14,14,14,14,14],[4,2,1,3,2,2,1,2,2,1,1,1,1,1,1,1,1,1,1],[1,5,14,2,5,5,14,5,5,14,14,14,14,14,14,14,14,14,14]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>emoji<\/th>\n      <th>short_name<\/th>\n      <th>counts<\/th>\n      <th>rank<\/th>\n      <th>counts_single<\/th>\n      <th>rank_single<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<!--/html_preserve-->
+#### Top \#ICML2018 emoji
 
 {% highlight r %}
-emoji_counts_icml_ = emoji_ref %>%
+emoji_counts_icml = emoji_ref %>%
   rowwise() %>%
   mutate(counts = NA) %>%
-  mutate(counts = emoji_counter_single(emoji_spread_icml$all, emoji)) %>%
+  mutate(counts = emoji_counter(emoji_spread_icots$all, emoji)) %>%
+  mutate(counts_single = emoji_counter_single(emoji_spread_icots$all, emoji)) %>%
   arrange(number) %>%
   mutate(rank = round(rank(-counts), 0)) %>%
+  mutate(rank_single = round(rank(-counts_single), 0)) %>%
   select(-c(character_length, number)) %>%
-  filter(counts > 0)  %>%
+  filter(counts > 0) %>%
   arrange(desc(counts)) %>%
-  filter(rank <= 5) %>%
-  select(emoji, short_name, counts)
-emoji_counts_icml_
+  select(emoji, short_name, counts, rank, counts_single, rank_single)
+DT::datatable(emoji_counts_icml)
 {% endhighlight %}
 
-    ## # A tibble: 6 x 3
-    ##   emoji short_name                      counts
-    ##   <chr> <fct>                            <int>
-    ## 1 😂    face with tears of joy               2
-    ## 2 😄    grinning face with smiling eyes      2
-    ## 3 🤔    thinking face                        2
-    ## 4 🙌    raising hands                        2
-    ## 5 ✈    airplane                             2
-    ## 6 🔥    fire                                 2
+<!--html_preserve-->
 
+<script type="application/json" data-for="htmlwidget-8a615fc88242363c693d">{"x":{"filter":"none","data":[["1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19"],["😍","🔥","👏","😂","❤","🐱","⚡","🎨","🎼","😀","🙂","😔","😢","👩","💥","🏫","🗼","🎸","🇫🇷"],["smiling face with heart-eyes","fire","clapping hands","face with tears of joy","red heart","cat face","high voltage","artist palette","musical score","grinning face","slightly smiling face","pensive face","crying face","woman","collision","school","Tokyo tower","guitar","flag: France"],[8,6,5,3,2,2,2,2,2,1,1,1,1,1,1,1,1,1,1],[1,2,3,4,7,7,7,7,7,14,14,14,14,14,14,14,14,14,14],[4,2,1,3,2,2,1,2,2,1,1,1,1,1,1,1,1,1,1],[1,5,14,2,5,5,14,5,5,14,14,14,14,14,14,14,14,14,14]],"container":"<table class=\"display\">\n  <thead>\n    <tr>\n      <th> <\/th>\n      <th>emoji<\/th>\n      <th>short_name<\/th>\n      <th>counts<\/th>\n      <th>rank<\/th>\n      <th>counts_single<\/th>\n      <th>rank_single<\/th>\n    <\/tr>\n  <\/thead>\n<\/table>","options":{"columnDefs":[{"className":"dt-right","targets":[3,4,5,6]},{"orderable":false,"targets":0}],"order":[],"autoWidth":false,"orderClasses":false}},"evals":[],"jsHooks":[]}</script>
+<!--/html_preserve-->
+Previous tops here:
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Top 5ish emojis from three different conferences (as of 15 mins ago). Ranked 1-5ish, left to right, in ( ) means equal counts.<a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> 😍👏(😂🐱🎨🎼)<a href="https://twitter.com/hashtag/useR2018?src=hash&amp;ref_src=twsrc%5Etfw">\#useR2018</a>: 📦👌(😍🌧️)<a href="https://twitter.com/hashtag/ICML2018?src=hash&amp;ref_src=twsrc%5Etfw">\#ICML2018</a>: 🔥😂(😁🤔🙌✈️✔️)<br><br>Code: <a href="https://t.co/yixpezWy8p">https://t.co/yixpezWy8p</a><br>Of course, this tweet will mess it up!
+</p>
+— Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1017216200697212928?ref_src=twsrc%5Etfw">July 12, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 More from ICOTS
 ---------------
 
@@ -577,7 +486,8 @@ Delighted to be at <a href="https://twitter.com/hashtag/icots10?src=hash&amp;ref
 — Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1015879520576942080?ref_src=twsrc%5Etfw">July 8, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-### Vanity time: My best tweets?
+Vanity time: My best tweets?
+----------------------------
 
 I kinda want to know which of my tweets did the best too...
 
@@ -594,6 +504,6 @@ myfavtweets = mytweets %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one had the most retweets](https://twitter.com/anyuser/status/), with 9 retweets and 31 favourites. Thanks guys!
+[Turns out this one had the most retweets](https://twitter.com/anyuser/status/), with 10 retweets and 0 favourites. Thanks guys!
 
-I tweeted 7% of the \#ICOTS10 tweets.
+I tweeted 6% of the \#ICOTS10 tweets.
