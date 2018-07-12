@@ -251,4 +251,4 @@ myfavtweets = mytweets %>%
 
 I tweeted 6% of the \#ICOTS10 tweets.
 
-<script type="application/json" data-for="htmlwidget-a5007af146bcf44139ac">{"x":{"url":"conferencetweets_files/figure-markdown_github//widgets/widget_icml_emoji.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
+<script type="application/json" data-for="htmlwidget-a5007af146bcf44139ac">{"x":{"url":"conferencetweets_files/figure-markdown_github//widgets/widget_icml_emoji.html","options":{"xdomain":"\*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
