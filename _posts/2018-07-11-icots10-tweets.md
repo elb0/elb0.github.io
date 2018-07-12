@@ -6,6 +6,15 @@ tags:
   - R-code
   - social-media
 ---
+A tweet comparing ICML and useR got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> measure up? <a href="https://t.co/NUC3k2XAQK">https://t.co/NUC3k2XAQK</a>
+</p>
+— Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 -   [How about number of retweets by conference?](#how-about-number-of-retweets-by-conference)
 -   [Number of favourites?](#number-of-favourites)
@@ -17,17 +26,8 @@ tags:
 -   [Scraping the emoji lists](#scraping-the-emoji-lists)
 -   [Is this just because of emoji spammers?](#is-this-just-because-of-emoji-spammers)
 -   [More from ICOTS](#more-from-icots)
-    -   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
+-   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
 
-A tweet comparing ICML and useR got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
-
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> measure up? <a href="https://t.co/NUC3k2XAQK">https://t.co/NUC3k2XAQK</a>
-</p>
-— Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 *Last updated:* 12 Jul approx 9:33pm Kyoto time.
 
 Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
