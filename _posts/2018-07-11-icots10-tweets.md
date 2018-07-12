@@ -7,7 +7,19 @@ tags:
   - social-media
 ---
 
-This tweet got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
+-   [How about number of retweets by conference?](#how-about-number-of-retweets-by-conference)
+-   [Number of favourites?](#number-of-favourites)
+-   [What about percentage of tweets getting favourited or retweeted?](#what-about-percentage-of-tweets-getting-favourited-or-retweeted)
+-   [Which tweets saw the most retweets?](#which-tweets-saw-the-most-retweets)
+-   [The most favourites?](#the-most-favourites)
+-   [Emojis ❤️](#emojis)
+-   [Checking if we can scrape the emoji lists](#checking-if-we-can-scrape-the-emoji-lists)
+-   [Scraping the emoji lists](#scraping-the-emoji-lists)
+-   [Is this just because of emoji spammers?](#is-this-just-because-of-emoji-spammers)
+-   [More from ICOTS](#more-from-icots)
+    -   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
+
+A tweet comparing ICML and useR got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
 
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
@@ -16,8 +28,7 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 — Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-*Last updated:* 12 Jul approx 10:00am Kyoto time.
+*Last updated:* 12 Jul approx 9:33pm Kyoto time.
 
 Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
 
@@ -37,7 +48,9 @@ library(data.table)
 
 Just one thing to be careful of, you'll need to get your own twitter keys. [This might be quite helpful](https://medium.com/@GalarnykMichael/accessing-data-from-twitter-api-using-r-part1-b387a1c7d3e). I had to reset my keys to get the code to work. Not sure why, but [others have had the same issue](https://github.com/geoffjentry/twitteR/issues/74).
 
-`# setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)`
+{% highlight r %}
+setup_twitter_oauth(consumer_key, consumer_secret, access_token, access_secret)
+{% endhighlight %}
 
     ## [1] "Using direct authentication"
 
@@ -81,8 +94,6 @@ all_tweets = rbind(icots_tweets, user_tweets, icml_tweets) %>%
   filter(!str_detect(text, "Ethlimited"))
 {% endhighlight %}
 
-    ## Warning: package 'bindrcpp' was built under R version 3.4.4
-
 {% highlight r %}
 all_noRT = rbind(icots_noRT, user_noRT, icml_noRT) %>%
   mutate(date = format(created, format="%Y-%m-%d")) %>%
@@ -103,7 +114,7 @@ all_tweets %>%
   ggtitle("Battle of the conference hashtags")
 {% endhighlight %}
 
-![](conferencetweets_files/figure-markdown_github/graph-1.png)
+![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/graph-1.png)
 
 {% highlight r %}
 all_noRT %>%
@@ -116,7 +127,7 @@ all_noRT %>%
   ggtitle("Battle of the conference hashtags - retweets removed")
 {% endhighlight %}
 
-![](conferencetweets_files/figure-markdown_github/graph-2.png)
+![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/graph-2.png)
 
 ### How about number of retweets by conference?
 
@@ -129,7 +140,7 @@ all_tweets %>%
   ggtitle("Retweets by conference hashtag")
 {% endhighlight %}
 
-![](conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
+![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
 
 ### Number of favourites?
 
@@ -142,7 +153,7 @@ all_tweets %>%
   ggtitle("Favourites by hashtag")
 {% endhighlight %}
 
-![](conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
+![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
 
 ### What about percentage of tweets getting favourited or retweeted?
 
@@ -163,7 +174,7 @@ all_noRT %>%
   scale_y_continuous(labels = scales::percent)
 {% endhighlight %}
 
-![](conferencetweets_files/figure-markdown_github/percentages-1.png)
+![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/percentages-1.png)
 
 The retweets are strong with \#ICOTS10!
 
@@ -185,7 +196,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017204452778913792), [ICML tweet](https://twitter.com/anyuser/status/1017212058238980097) and [useR tweet](https://twitter.com/anyuser/status/1017200266238726146).
+Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017390498275909634), [ICML tweet](https://twitter.com/anyuser/status/1017383089415380993) and [useR tweet](https://twitter.com/anyuser/status/1017379649549144067).
 
 ### The most favourites?
 
@@ -205,15 +216,15 @@ topfavuser = topfav %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICML tweet](https://twitter.com/anyuser/status/1016957218829361152) and [useR tweet](https://twitter.com/anyuser/status/1016860465807257600).
+Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICML tweet](https://twitter.com/anyuser/status/1017059295052140544) and [useR tweet](https://twitter.com/anyuser/status/1016912611529510913).
 
 ### Emojis ❤️
 
-What better place to explore emojis from that the country that gave us the language that gave us the word! Ya follow? Emoji is a Japanese word that, if a quick Google search is to be believed, means "picture character".
+What better place to explore emojis from than the country that gave us the language that gave us the word! Ya follow? Emoji is a Japanese word that, if a quick Google search is to be believed, means "picture character".
 
-Anna Fergusson, \[@annafergussonnz\](<https://twitter.com/annafergussonnz>), and I, in our talk on [modern data in a large introductory statistics course](https://annafergusson.github.io/paristergram/), tried to quickly show how emoji analysis can be a bit of fun. So let's keep that up here.
+Anna Fergusson, \[@annafergussonnz\](<https://twitter.com/annafergussonnz>), and I, in our talk on [modern data in a large introductory statistics course](https://annafergusson.github.io/paristergram/) based on the awesome work Anna has been driving, tried to quickly show how emoji analysis can be a bit of fun. So let's keep that up here.
 
-This first section is mostly jsut copied from the work Anna and I did that will be up on the \[Parisgram\]((<https://annafergusson.github.io/paristergram/>) at somepoint. The emoji handling is not very elegant right now.
+This first section is mostly just copied from the work Anna and I did that will be up on the \[Parisgram site\]((<https://annafergusson.github.io/paristergram/>) at somepoint. The emoji handling is not very elegant right now.
 
 There is a table provided by the Unicode organisation that has the emoji, and an additional one that details skintone variations. These also provide a text description and groups the emoji into wider groups, like flags, buildings, types of facial expression etc. It would be ideal to have that information in R to work with directly, so I want to scrape the tables into R. I can check if this seems to be allowed by using the `robotstxt` package. There are a range of other ways to get databases like this, this just seemed easiest for this case.
 
@@ -223,11 +234,13 @@ There is a table provided by the Unicode organisation that has the emoji, and an
 # These are the url with the  list of emoji codes from Unicode
 url_base = "https://unicode.org/emoji/charts/full-emoji-list.html"
 url_skin = "https://unicode.org/emoji/charts/full-emoji-modifiers.html"
+{% endhighlight %}
 
+{% highlight r %}
 # We can check out the robots.txt file right from R
 robotstxt::get_robotstxt("unicode.org")
-
 {% endhighlight %}
+
 I've removed the output, but when I ran it, the bits we wanted were okay, and the crawl delays were only for certain bots.
 
 The `paths_allowed()` functions will return true if the path is allowed, based on the robots.txt file for the domain.
@@ -247,8 +260,6 @@ robotstxt::paths_allowed(url_skin)
 Both come back `TRUE`, we are allowed to scrape them.
 
 ### Scraping the emoji lists
-
-As we discovered above, we are allowed to scrape this site, they just ask we don't scrape more than once a minute.
 
 {% highlight r %}
 emoji_base = read_html(url_base) %>%
@@ -392,15 +403,13 @@ emoji_counts_icots = emoji_ref %>%
 emoji_counts_icots
 {% endhighlight %}
 
-    ## # A tibble: 6 x 3
+    ## # A tibble: 4 x 3
     ##   emoji short_name                   counts
     ##   <chr> <fct>                         <int>
     ## 1 😍    smiling face with heart-eyes      8
-    ## 2 👏    clapping hands                    5
-    ## 3 😂    face with tears of joy            2
-    ## 4 🐱    cat face                          2
-    ## 5 🎨    artist palette                    2
-    ## 6 🎼    musical score                     2
+    ## 2 🔥    fire                              6
+    ## 3 👏    clapping hands                    5
+    ## 4 😂    face with tears of joy            3
 
 #### Top \#useR2018 emoji
 
@@ -422,10 +431,10 @@ emoji_counts_user
     ## # A tibble: 4 x 3
     ##   emoji short_name                   counts
     ##   <chr> <fct>                         <int>
-    ## 1 📦    package                          12
-    ## 2 👌    OK hand                          11
-    ## 3 😍    smiling face with heart-eyes      9
-    ## 4 🌧    cloud with rain                   9
+    ## 1 🏉    rugby football                   18
+    ## 2 📦    package                          16
+    ## 3 🌧    cloud with rain                   9
+    ## 4 😍    smiling face with heart-eyes      7
 
 #### Top \#ICML2018 emoji
 
@@ -444,7 +453,7 @@ emoji_counts_icml = emoji_ref %>%
 emoji_counts_icml
 {% endhighlight %}
 
-    ## # A tibble: 7 x 3
+    ## # A tibble: 6 x 3
     ##   emoji short_name                      counts
     ##   <chr> <fct>                            <int>
     ## 1 🔥    fire                                 8
@@ -453,7 +462,108 @@ emoji_counts_icml
     ## 4 🤔    thinking face                        2
     ## 5 🙌    raising hands                        2
     ## 6 ✈    airplane                             2
-    ## 7 ✔    heavy check mark                     2
+
+Previous tops here:
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Top 5ish emojis from three different conferences (as of 15 mins ago). Ranked 1-5ish, left to right, in ( ) means equal counts.<a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> 😍👏(😂🐱🎨🎼)<a href="https://twitter.com/hashtag/useR2018?src=hash&amp;ref_src=twsrc%5Etfw">\#useR2018</a>: 📦👌(😍🌧️)<a href="https://twitter.com/hashtag/ICML2018?src=hash&amp;ref_src=twsrc%5Etfw">\#ICML2018</a>: 🔥😂(😁🤔🙌✈️✔️)<br><br>Code: <a href="https://t.co/yixpezWy8p">https://t.co/yixpezWy8p</a><br>Of course, this tweet will mess it up!
+</p>
+— Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1017216200697212928?ref_src=twsrc%5Etfw">July 12, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+### Is this just because of emoji spammers?
+
+I know at least one of my tweets had a gratuitous number of hand clap emojis. What if we limit to one per Tweet? Does that change the top used emoji? `str_detect` is quie useful for that.
+
+{% highlight r %}
+emoji_counter_single = function(data_col, emoji_from_ref){
+  counts = tryCatch({
+    sum(str_detect(data_col, emoji_from_ref))
+  }, error=function(e)counts=NA, {}
+  )
+  return(counts)
+}
+{% endhighlight %}
+
+#### Top \#ICOTS10 emojis - less spammy
+
+{% highlight r %}
+# This can take a bit of time to run
+emoji_counts_icots_ = emoji_ref %>%
+  rowwise() %>%
+  mutate(counts = NA) %>%
+  mutate(counts = emoji_counter_single(emoji_spread_icots$all, emoji)) %>%
+  arrange(number) %>%
+  mutate(rank = round(rank(-counts), 0)) %>%
+  select(-c(character_length, number)) %>%
+  filter(counts > 0) %>%
+  arrange(desc(counts)) %>%
+  filter(rank <= 5) %>%
+  select(emoji, short_name, counts)
+emoji_counts_icots_
+{% endhighlight %}
+
+    ## # A tibble: 7 x 3
+    ##   emoji short_name                   counts
+    ##   <chr> <fct>                         <int>
+    ## 1 😍    smiling face with heart-eyes      4
+    ## 2 😂    face with tears of joy            3
+    ## 3 ❤    red heart                         2
+    ## 4 🐱    cat face                          2
+    ## 5 🔥    fire                              2
+    ## 6 🎨    artist palette                    2
+    ## 7 🎼    musical score                     2
+
+#### Top \#useR2018 emoji - less spammy
+
+{% highlight r %}
+emoji_counts_user_ = emoji_ref %>%
+  rowwise() %>%
+  mutate(counts = NA) %>%
+  mutate(counts = emoji_counter_single(emoji_spread_user$all, emoji)) %>%
+  arrange(number) %>%
+  mutate(rank = round(rank(-counts), 0)) %>%
+  select(-c(character_length, number)) %>%
+  filter(counts > 0)  %>%
+  arrange(desc(counts)) %>%
+  filter(rank <= 5) %>%
+  select(emoji, short_name, counts)
+emoji_counts_user_
+{% endhighlight %}
+
+    ## # A tibble: 3 x 3
+    ##   emoji short_name                   counts
+    ##   <chr> <fct>                         <int>
+    ## 1 📦    package                          14
+    ## 2 😂    face with tears of joy            6
+    ## 3 😍    smiling face with heart-eyes      5
+
+#### Top \#ICML2018 emoji - less spammy
+
+{% highlight r %}
+emoji_counts_icml_ = emoji_ref %>%
+  rowwise() %>%
+  mutate(counts = NA) %>%
+  mutate(counts = emoji_counter_single(emoji_spread_icml$all, emoji)) %>%
+  arrange(number) %>%
+  mutate(rank = round(rank(-counts), 0)) %>%
+  select(-c(character_length, number)) %>%
+  filter(counts > 0)  %>%
+  arrange(desc(counts)) %>%
+  filter(rank <= 5) %>%
+  select(emoji, short_name, counts)
+emoji_counts_icml_
+{% endhighlight %}
+
+    ## # A tibble: 6 x 3
+    ##   emoji short_name                      counts
+    ##   <chr> <fct>                            <int>
+    ## 1 😂    face with tears of joy               2
+    ## 2 😄    grinning face with smiling eyes      2
+    ## 3 🤔    thinking face                        2
+    ## 4 🙌    raising hands                        2
+    ## 5 ✈    airplane                             2
+    ## 6 🔥    fire                                 2
 
 More from ICOTS
 ---------------
@@ -477,25 +587,13 @@ mytweets = all_tweets %>%
 
 myprop = dim(mytweets)[1]/dim(icots_tweets)[1]
 
-mytweets %>%
+myfavtweets = mytweets %>%
   arrange(desc(retweetCount)) %>%
-  select(text, retweetCount) %>%
-  head()
+  select(text, retweetCount, favoriteCount) %>%
+  filter(retweetCount == max(retweetCount)) %>%
+  filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-    ##                                                                                                                                                             text
-    ## 1                   Our brains can be huge drama mongers - learning how to think through these dramatic instincts is a key part of unde… https://t.co/lDqEq1DkFV
-    ## 2 Practical advice for Stats educators from @hspter:\n\U0001f469‍\U0001f3eb "Teach design as a fundamental process that is independent o… https://t.co/MCzUNRhu3y
-    ## 3                    "What should we want most for our students? The ability to do things machines can't do!" - Chris Wild (Session 9A)… https://t.co/dYN7aIkZPa
-    ## 4                                                         The 10 chapters of #Factfulness help us manage our dramatic instincts #icots10 https://t.co/3AEqTTpukr
-    ## 5                    Why did more Swedes know extreme poverty had halved? When asked they wrote in "Hans Rosling". I teared up. #icots10 https://t.co/6OZvFfbktY
-    ## 6                   "Crime data doesn't exist...the only things we have is arrest data". -@jo_hardin47 (Session 3A) some great points a… https://t.co/DOf6eGgIqJ
-    ##   retweetCount
-    ## 1            8
-    ## 2            8
-    ## 3            7
-    ## 4            5
-    ## 5            5
-    ## 6            4
+[Turns out this one had the most retweets](https://twitter.com/anyuser/status/), with 9 retweets and 31 favourites. Thanks guys!
 
 I tweeted 7% of the \#ICOTS10 tweets.
