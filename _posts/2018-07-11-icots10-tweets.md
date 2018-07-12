@@ -16,7 +16,8 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 — Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-*Last updated:* 12 Jul approx 12:32am Kyoto time.
+
+*Last updated:* 12 Jul approx 10:00am Kyoto time.
 
 Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
 
@@ -102,7 +103,7 @@ all_tweets %>%
   ggtitle("Battle of the conference hashtags")
 {% endhighlight %}
 
-![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/graph-1.png)
+![](conferencetweets_files/figure-markdown_github/graph-1.png)
 
 {% highlight r %}
 all_noRT %>%
@@ -115,7 +116,7 @@ all_noRT %>%
   ggtitle("Battle of the conference hashtags - retweets removed")
 {% endhighlight %}
 
-![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/graph-2.png)
+![](conferencetweets_files/figure-markdown_github/graph-2.png)
 
 ### How about number of retweets by conference?
 
@@ -128,7 +129,7 @@ all_tweets %>%
   ggtitle("Retweets by conference hashtag")
 {% endhighlight %}
 
-![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
+![](conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
 
 ### Number of favourites?
 
@@ -141,7 +142,7 @@ all_tweets %>%
   ggtitle("Favourites by hashtag")
 {% endhighlight %}
 
-![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
+![](conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
 
 ### What about percentage of tweets getting favourited or retweeted?
 
@@ -162,7 +163,7 @@ all_noRT %>%
   scale_y_continuous(labels = scales::percent)
 {% endhighlight %}
 
-![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/percentages-1.png)
+![](conferencetweets_files/figure-markdown_github/percentages-1.png)
 
 The retweets are strong with \#ICOTS10!
 
@@ -184,7 +185,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017056191384436736), [ICML tweet](https://twitter.com/anyuser/status/1017046233104384002) and [useR tweet](https://twitter.com/anyuser/status/1017068515092811777).
+Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017204452778913792), [ICML tweet](https://twitter.com/anyuser/status/1017212058238980097) and [useR tweet](https://twitter.com/anyuser/status/1017200266238726146).
 
 ### The most favourites?
 
@@ -204,7 +205,7 @@ topfavuser = topfav %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICML tweet](https://twitter.com/anyuser/status/1016548701248974850) and [useR tweet](https://twitter.com/anyuser/status/1014967711036829696).
+Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1016569243947724800), [ICML tweet](https://twitter.com/anyuser/status/1016957218829361152) and [useR tweet](https://twitter.com/anyuser/status/1016860465807257600).
 
 ### Emojis ❤️
 
@@ -225,8 +226,8 @@ url_skin = "https://unicode.org/emoji/charts/full-emoji-modifiers.html"
 
 # We can check out the robots.txt file right from R
 robotstxt::get_robotstxt("unicode.org")
-{% endhighlight %}
 
+{% endhighlight %}
 I've removed the output, but when I ran it, the bits we wanted were okay, and the crawl delays were only for certain bots.
 
 The `paths_allowed()` functions will return true if the path is allowed, based on the robots.txt file for the domain.
@@ -253,8 +254,6 @@ As we discovered above, we are allowed to scrape this site, they just ask we don
 emoji_base = read_html(url_base) %>%
   html_nodes("table") %>%
   html_table()
-
-Sys.sleep(60) # You can interupt the sleep with the 'esc' button from the R console
 
 emoji_skin = read_html(url_skin) %>%
   html_nodes("table") %>%
@@ -359,7 +358,7 @@ emoji_prop_user = sum(!is.na(emoji_spread_user$`1`))/dim(unique_user)[1]
 emoji_prop_icml = sum(!is.na(emoji_spread_icml$`1`))/dim(unique_icml)[1]
 {% endhighlight %}
 
-So 6% of ICOTS tweets had at least one emoji in them, 13% of useR tweets and 4% of ICML tweets.
+So 6% of ICOTS tweets had at least one emoji in them, 12% of useR tweets and 4% of ICML tweets.
 
 #### Which emoji were the most popular?
 
@@ -374,6 +373,8 @@ emoji_counter = function(data_col, emoji_from_ref){
   return(counts)
 }
 {% endhighlight %}
+
+#### Top \#ICOTS10 emojis
 
 {% highlight r %}
 # This can take a bit of time to run
@@ -391,8 +392,6 @@ emoji_counts_icots = emoji_ref %>%
 emoji_counts_icots
 {% endhighlight %}
 
-#### Top #ICOTS10 emojis
-
     ## # A tibble: 6 x 3
     ##   emoji short_name                   counts
     ##   <chr> <fct>                         <int>
@@ -402,6 +401,8 @@ emoji_counts_icots
     ## 4 🐱    cat face                          2
     ## 5 🎨    artist palette                    2
     ## 6 🎼    musical score                     2
+
+#### Top \#useR2018 emoji
 
 {% highlight r %}
 emoji_counts_user = emoji_ref %>%
@@ -418,16 +419,15 @@ emoji_counts_user = emoji_ref %>%
 emoji_counts_user
 {% endhighlight %}
 
-#### Top #useR2018 emojis
-
-    ## # A tibble: 5 x 3
+    ## # A tibble: 4 x 3
     ##   emoji short_name                   counts
     ##   <chr> <fct>                         <int>
-    ## 1 👌    OK hand                          11
-    ## 2 📦    package                           9
-    ## 3 😍    smiling face with heart-eyes      7
-    ## 4 👍    thumbs up                         5
-    ## 5 👏    clapping hands                    5
+    ## 1 📦    package                          12
+    ## 2 👌    OK hand                          11
+    ## 3 😍    smiling face with heart-eyes      9
+    ## 4 🌧    cloud with rain                   9
+
+#### Top \#ICML2018 emoji
 
 {% highlight r %}
 emoji_counts_icml = emoji_ref %>%
@@ -444,16 +444,16 @@ emoji_counts_icml = emoji_ref %>%
 emoji_counts_icml
 {% endhighlight %}
 
-#### Top #ICML2018 emojis
-
-    ## # A tibble: 5 x 3
+    ## # A tibble: 7 x 3
     ##   emoji short_name                      counts
     ##   <chr> <fct>                            <int>
-    ## 1 🔥    fire                                 9
-    ## 2 😄    grinning face with smiling eyes      2
-    ## 3 🤔    thinking face                        2
-    ## 4 ✈    airplane                             2
-    ## 5 ✔    heavy check mark                     2
+    ## 1 🔥    fire                                 8
+    ## 2 😂    face with tears of joy               3
+    ## 3 😄    grinning face with smiling eyes      2
+    ## 4 🤔    thinking face                        2
+    ## 5 🙌    raising hands                        2
+    ## 6 ✈    airplane                             2
+    ## 7 ✔    heavy check mark                     2
 
 More from ICOTS
 ---------------
