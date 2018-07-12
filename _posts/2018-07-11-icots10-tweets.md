@@ -251,4 +251,4 @@ myfavtweets = mytweets %>%
 
 I tweeted 6% of the \#ICOTS10 tweets.
 
-<iframe src="{{site.baseurl}}/images/conferencetweets_files/figure-markdown_github//widgets/widget_icml_emoji.html" &embedded=true" width="900" height="780" style="border: none;"></iframe>
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icml_emoji.html" &embedded=true" width="900" height="780" style="border: none;"></iframe>
