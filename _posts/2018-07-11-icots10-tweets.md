@@ -504,6 +504,6 @@ myfavtweets = mytweets %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one had the most retweets](https://twitter.com/anyuser/status/1016130460697522177), with 8 retweets and 31 favourites. Thanks guys!
+[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522177), with 8 retweets and 31 favourites. Thanks guys!
 
 I tweeted 6% of the \#ICOTS10 tweets.
