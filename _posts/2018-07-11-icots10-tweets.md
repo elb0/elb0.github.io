@@ -47,7 +47,7 @@ library(robotstxt)
 library(rvest)
 library(tibble)
 library(data.table)
-library(knitr)
+library(DT)
 library(widgetframe)
 {% endhighlight %}
 
@@ -420,7 +420,7 @@ emoji_counts_icots = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icots))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icots_emoji.html>" width="100%" style="border: none;"&gt;</iframe>
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_icots_emoji.html>" width="100%" height="500" style="border: none;"&gt;</iframe>
 
 #### Top \#useR2018 emoji
 
@@ -441,7 +441,7 @@ emoji_counts_user = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_user))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_user_emoji.html" width="100%" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_user_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
 
 #### Top \#ICML2018 emoji
@@ -459,14 +459,11 @@ emoji_counts_icml = emoji_ref %>%
   filter(counts > 0) %>%
   arrange(desc(counts)) %>%
   select(emoji, short_name, counts, rank, counts_single, rank_single)
-knitr::kable(emoji_counts_icml)
-{% endhighlight %}
 
-{% highlight r %}
 frameWidget(DT::datatable(emoji_counts_icml))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icml_emoji.html" width="100%" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_icml_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
 
 Previous tops here:
