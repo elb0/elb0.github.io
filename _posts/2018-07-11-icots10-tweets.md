@@ -479,8 +479,8 @@ frameWidget(DT::datatable(emoji_counts_icml))
 
 <iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icml_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
-More from ICOTS
----------------
+
+### More from ICOTS
 
 Most of my tweets from this conference are in the below thread and I also set up a [list of resources](http://blog.dataembassy.co.nz/icots10/) to check out after the conference based on people's recommendations.
 
