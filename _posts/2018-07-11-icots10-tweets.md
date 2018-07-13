@@ -419,11 +419,7 @@ emoji_counts_icots = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icots))
 {% endhighlight %}
 
-<!--html_preserve-->
-
-<script type="application/json" data-for="htmlwidget-cbef360277407a45a233">{"x":{"url":"{{site.baseurl}}/images/conferencetweets_files/figure-markdown_github//widgets/widget_icots_emoji.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-<!--/html_preserve-->
-<http://blog.dataembassy.co.nz/images/{{site.baseurl}}/images/conferencetweets_files/widgets/widget_icots_emoji.html>" width="100%" style="border: none;"&gt;</iframe>
+<http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icots_emoji.html>" width="100%" style="border: none;"&gt;</iframe>
 
 #### Top \#useR2018 emoji
 
@@ -446,10 +442,9 @@ frameWidget(DT::datatable(emoji_counts_user))
 
 <!--html_preserve-->
 
-<script type="application/json" data-for="htmlwidget-9e27f01ea5463e923e7a">{"x":{"url":"{{site.baseurl}}/images/conferencetweets_files/figure-markdown_github//widgets/widget_user_emoji.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-<!--/html_preserve-->
-<iframe src="http://blog.dataembassy.co.nz/images/{{site.baseurl}}/images/conferencetweets_files/widgets/widget_user_emoji.html" width="100%" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_user_emoji.html" width="100%" style="border: none;">
 </iframe>
+
 #### Top \#ICML2018 emoji
 
 {% highlight r %}
@@ -468,51 +463,13 @@ emoji_counts_icml = emoji_ref %>%
 knitr::kable(emoji_counts_icml)
 {% endhighlight %}
 
-| emoji | short\_name                     |  counts|  rank|  counts\_single|  rank\_single|
-|:------|:--------------------------------|-------:|-----:|---------------:|-------------:|
-| 🔥     | fire                            |       9|     1|               3|             2|
-| 😂     | face with tears of joy          |       4|     2|               3|             2|
-| 😄     | grinning face with smiling eyes |       3|     3|               3|             2|
-| 😎     | smiling face with sunglasses    |       2|     7|               2|             6|
-| 🤔     | thinking face                   |       2|     7|               2|             6|
-| 😔     | pensive face                    |       2|     7|               2|             6|
-| 🙌     | raising hands                   |       2|     7|               2|             6|
-| ✈     | airplane                        |       2|     7|               2|             6|
-| ✔     | heavy check mark                |       2|     7|               1|            21|
-| 🇸🇪    | flag: Sweden                    |       2|     7|               2|             6|
-| 😁     | beaming face with smiling eyes  |       1|    22|               1|            21|
-| 🤣     | rolling on the floor laughing   |       1|    22|               1|            21|
-| 😅     | grinning face with sweat        |       1|    22|               1|            21|
-| 😆     | grinning squinting face         |       1|    22|               1|            21|
-| 😉     | winking face                    |       1|    22|               1|            21|
-| 😞     | disappointed face               |       1|    22|               1|            21|
-| 🤪     | zany face                       |       1|    22|               1|            21|
-| 👻     | ghost                           |       1|    22|               1|            21|
-| 🤖     | robot face                      |       1|    22|               1|            21|
-| 💪     | flexed biceps                   |       1|    22|               1|            21|
-| 👇     | backhand index pointing down    |       1|    22|               1|            21|
-| 👏     | clapping hands                  |       1|    22|               1|            21|
-| ❤     | red heart                       |       1|    22|               1|            21|
-| ☀     | sun                             |       1|    22|               1|            21|
-| 🌩     | cloud with lightning            |       1|    22|               1|            21|
-| ⚡     | high voltage                    |       1|    22|               1|            21|
-| 🎁     | wrapped gift                    |       1|    22|               1|            21|
-| ⚽     | soccer ball                     |       1|    22|               1|            21|
-| 💯     | hundred points                  |       1|    22|               1|            21|
-| 🇫🇷    | flag: France                    |       1|    22|               1|            21|
-| 👏🏻    | clapping hands: light skin tone |       1|    22|               1|            21|
-| 🏻     | light skin tone                 |       1|    22|               1|            21|
-
 {% highlight r %}
 frameWidget(DT::datatable(emoji_counts_icml))
 {% endhighlight %}
 
-<!--html_preserve-->
-
-<script type="application/json" data-for="htmlwidget-346bff5de2592ffa5b3d">{"x":{"url":"{{site.baseurl}}/images/conferencetweets_files/figure-markdown_github//widgets/widget_icml_emoji.html","options":{"xdomain":"*","allowfullscreen":false,"lazyload":false}},"evals":[],"jsHooks":[]}</script>
-<!--/html_preserve-->
-<iframe src="http://blog.dataembassy.co.nz/images/{{site.baseurl}}/images/conferencetweets_files/widgets/widget_icml_emoji.html" width="100%" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icml_emoji.html" width="100%" style="border: none;">
 </iframe>
+
 Previous tops here:
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
