@@ -7,16 +7,6 @@ tags:
   - social-media
 ---
 
-A tweet comparing ICML and useR tweets got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
-
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> measure up? <a href="https://t.co/NUC3k2XAQK">https://t.co/NUC3k2XAQK</a>
-</p>
-— Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 -   [Number of tweets by conference](#number-of-tweets-by-conference)
 -   [How about number of retweets by conference?](#how-about-number-of-retweets-by-conference)
 -   [Number of favourites?](#number-of-favourites)
@@ -26,12 +16,23 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 -   [Emojis ❤️](#emojis)
 -   [Checking if we can scrape the emoji lists](#checking-if-we-can-scrape-the-emoji-lists)
 -   [Scraping the emoji lists](#scraping-the-emoji-lists)
--   [Which emoji were the most popular?](#which-emoji-were-the most-popular)
+-   [Which emoji were the most popular?](#which-emoji-were-the-most-popular)
+    -   [Top \#ICOTS10 emojis](#top-icots10-emojis)
+    -   [Top \#useR2018 emoji](#top-user2018-emoji)
+    -   [Top \#ICML2018 emoji](#top-icml2018-emoji)
 -   [More from ICOTS](#more-from-icots)
--   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
+-   [Vanity time: My best tweet?](#vanity-time-my-best-tweet)
 
+A tweet comparing ICML and useR tweets got me thinking, and I've wanted to use the `twitteR` or `rtweet` package for a while...
 
-*Last updated:* 13 Jul approx 12:20pm Kyoto time.
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> measure up? <a href="https://t.co/NUC3k2XAQK">https://t.co/NUC3k2XAQK</a>
+</p>
+— Kelly Bodwin (@KellyBodwin) <a href="https://twitter.com/KellyBodwin/status/1016743797550485505?ref_src=twsrc%5Etfw">July 10, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+*Last updated:* 13 Jul approx 5:20pm Kyoto time.
 
 Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
 
@@ -65,7 +66,7 @@ Also note, the `n =` were chosen by trial and error. Very sophisticated.
 
 {% highlight r %}
 icots = searchTwitter('#icots10', n = 1150)
-user = searchTwitter('#useR2018', n = 4000)
+user = searchTwitter('#useR2018', n = 4200)
 icml = searchTwitter('#ICML2018', n = 4200)
 
 icots_tweets = twListToDF(icots) %>%
@@ -81,7 +82,7 @@ icml_tweets = twListToDF(icml) %>%
 
 There also seemed to be lots of tweets under the ICOTS hashtag that were about Ethereum, which wasn't really related to us. I've filtered these out.
 
-And you might want to look at the dates in a different timezone setting - these conferences are all in different countries.
+And you might want to look at the dates in a different timezone setting - these conferences are all in different countries and I've just taken the time and date created information directly from the Twitter API results with no transformation.
 
 {% highlight r %}
 all_tweets = rbind(icots_tweets, user_tweets, icml_tweets) %>%
@@ -123,7 +124,7 @@ all_noRT %>%
 
 ![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/graph-2.png)
 
-Can you spot which day ICOTS had a half day and went exploring Kyoto and Nara instead of tweeting?
+Can you spot which day ICOTS had a half-day and folks went off exploring Kyoto or to see the deer at Nara instead of tweeting?
 
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
@@ -199,7 +200,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017571630271352832), [ICML tweet](https://twitter.com/anyuser/status/1017567971869413376) and [useR tweet](https://twitter.com/anyuser/status/1017526028221198336).
+Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017677311200649216), [ICML tweet](https://twitter.com/anyuser/status/1017685299046969344) and [useR tweet](https://twitter.com/anyuser/status/1017665435888582656).
 
 ### The most favourites?
 
@@ -219,7 +220,7 @@ topfavuser = topfav %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1017244182035849216), [ICML tweet](https://twitter.com/anyuser/status/1017059295052140544) and [useR tweet](https://twitter.com/anyuser/status/1014967711036829696).
+Check out the most favourited [ICOTS tweet](https://twitter.com/anyuser/status/1017244182035849216), [ICML tweet](https://twitter.com/anyuser/status/1017059295052140544) and [useR tweet](https://twitter.com/anyuser/status/1016860465807257600).
 
 ### Emojis ❤️
 
@@ -315,18 +316,30 @@ emoji_ref = emoji_ref_interim %>%
 
 One wrinkle is that as far as I can tell, you can't stop the Twitter app from truncating tweets that have been retweeted when using twitteR. This seems possible in rtweet - but I couldn't get the authentication working. More [on the GitHub issues page](https://github.com/mkearney/rtweet/issues/179).
 
-So, I'm just going to try to make this work out by getting the untruncated.
+So, I'm just going to try to make this work out by getting all the unique tweets ("RT @username" will be in front of the retweeted ones) and then removing all the tweets that had been truncated (i.e. retweeted). If my logic is right, this should leave us with the untruncated text of all tweets, just some of them will be the retweeted version. This shouldn't effect the emojis.
 
+I am also going to remove the midway summary tweet that I shared with the current top emojis as that would increase the counts for those tweets.
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Top 5ish emojis from three different conferences (as of 15 mins ago). Ranked 1-5ish, left to right, in ( ) means equal counts.<a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> 😍👏(😂🐱🎨🎼)<a href="https://twitter.com/hashtag/useR2018?src=hash&amp;ref_src=twsrc%5Etfw">\#useR2018</a>: 📦👌(😍🌧️)<a href="https://twitter.com/hashtag/ICML2018?src=hash&amp;ref_src=twsrc%5Etfw">\#ICML2018</a>: 🔥😂(😁🤔🙌✈️✔️)<br><br>Code: <a href="https://t.co/yixpezWy8p">https://t.co/yixpezWy8p</a><br>Of course, this tweet will mess it up!
+</p>
+— Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1017216200697212928?ref_src=twsrc%5Etfw">July 12, 2018</a>
+</blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 {% highlight r %}
 unique_icots = icots_tweets %>%
+  filter(id != 1017216200697212928) %>%
   distinct(text, .keep_all=TRUE) %>%
   filter(truncated == FALSE)
 
-unique_user = user_tweets %>%
+unique_user = user_tweets %>%   
+  filter(id != 1017216200697212928) %>%
   distinct(text, .keep_all=TRUE) %>%
   filter(truncated == FALSE)
 
 unique_icml = icml_tweets %>%
+  filter(id != 1017216200697212928) %>%
   distinct(text, .keep_all=TRUE) %>%
   filter(truncated == FALSE)
 
@@ -372,7 +385,7 @@ emoji_prop_user = sum(!is.na(emoji_spread_user$`1`))/dim(unique_user)[1]
 emoji_prop_icml = sum(!is.na(emoji_spread_icml$`1`))/dim(unique_icml)[1]
 {% endhighlight %}
 
-So 7% of ICOTS tweets had at least one emoji in them, 13% of useR tweets and 3% of ICML tweets.
+So 7% of ICOTS tweets had at least one emoji in them, 10% of useR tweets and 3% of ICML tweets.
 
 ### Which emoji were the most popular?
 
@@ -420,8 +433,8 @@ emoji_counts_icots = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icots))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_icots_emoji.html>" width="100%" height="500" style="border: none;"&gt;</iframe>
-
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icots_emoji.html" width="100%" height="500" style="border: none;">
+</iframe>
 #### Top \#useR2018 emoji
 
 {% highlight r %}
@@ -441,9 +454,8 @@ emoji_counts_user = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_user))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_user_emoji.html" width="100%" height="500" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_user_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
-
 #### Top \#ICML2018 emoji
 
 {% highlight r %}
@@ -463,17 +475,8 @@ emoji_counts_icml = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icml))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown-github/widgets/widget_icml_emoji.html" width="100%" height="500" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icml_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
-
-Previous tops here:
-<blockquote class="twitter-tweet" data-lang="en">
-<p lang="en" dir="ltr">
-Top 5ish emojis from three different conferences (as of 15 mins ago). Ranked 1-5ish, left to right, in ( ) means equal counts.<a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc%5Etfw">\#ICOTS10</a> 😍👏(😂🐱🎨🎼)<a href="https://twitter.com/hashtag/useR2018?src=hash&amp;ref_src=twsrc%5Etfw">\#useR2018</a>: 📦👌(😍🌧️)<a href="https://twitter.com/hashtag/ICML2018?src=hash&amp;ref_src=twsrc%5Etfw">\#ICML2018</a>: 🔥😂(😁🤔🙌✈️✔️)<br><br>Code: <a href="https://t.co/yixpezWy8p">https://t.co/yixpezWy8p</a><br>Of course, this tweet will mess it up!
-</p>
-— Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1017216200697212928?ref_src=twsrc%5Etfw">July 12, 2018</a>
-</blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 More from ICOTS
 ---------------
 
@@ -486,8 +489,8 @@ Delighted to be at <a href="https://twitter.com/hashtag/icots10?src=hash&amp;ref
 — Liza Bolton (@Liza\_Bolton) <a href="https://twitter.com/Liza_Bolton/status/1015879520576942080?ref_src=twsrc%5Etfw">July 8, 2018</a>
 </blockquote>
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-Vanity time: My best tweets?
-----------------------------
+Vanity time: My best tweet?
+---------------------------
 
 I kinda want to know which of my tweets did the best too...
 
@@ -504,6 +507,6 @@ myfavtweets = mytweets %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one had the most retweets](https://twitter.com/anyuser/status/1017216822209273856), with 10 retweets and 0 favourites. Thanks guys!
+[Turns out this one was pretty good](https://twitter.com/anyuser/status/1017216822209273856), with 10 retweets and 0 favourites. Thanks guys!
 
 I tweeted 6% of the \#ICOTS10 tweets.
