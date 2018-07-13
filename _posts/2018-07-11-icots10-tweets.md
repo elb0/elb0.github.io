@@ -497,10 +497,16 @@ Vanity time: My best tweet?
 I kinda want to know which of my tweets did the best too...
 
 {% highlight r %}
-mytweets = all_tweets %>%
+mytweets_noRT = all_noRT %>%
+  filter(Hashtag == "#ICOTS10") %>%
   filter(screenName == "Liza_Bolton")
 
-myprop = dim(mytweets)[1]/dim(icots_tweets)[1]
+mytweets = all_tweets %>%
+  filter(Hashtag == "#ICOTS10") %>%
+  filter(screenName == "Liza_Bolton")
+
+myprop_noRT = dim(mytweets_noRT)[1]/dim(filter(all_noRT, Hashtag == "#ICOTS10"))[1]
+myprop = dim(mytweets)[1]/dim(filter(all_tweets, Hashtag == "#ICOTS10"))[1]
 
 myfavtweets = mytweets %>%
   arrange(desc(retweetCount)) %>%
@@ -509,6 +515,6 @@ myfavtweets = mytweets %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one was pretty good](https://twitter.com/anyuser/status/1017216822209273856), with 10 retweets and 0 favourites. Thanks guys!
+[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522176), with 8 retweets and 31 favourites. Thanks guys!
 
-I tweeted 6% of the \#ICOTS10 tweets.
+In earlier versions of this post I calculated what proportion of the #ICOTS10 tweets were my tweets but used ALL ICOTS tweets, including all the many retweets. I tweeted 6% of the #ICOTS10 tweets including retweets (my own and others'), but 15% of the original \#ICOTS10 tweets (i.e. not counting retweets). What a loudmouth!
