@@ -26,6 +26,7 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 -   [Emojis ❤️](#emojis)
 -   [Checking if we can scrape the emoji lists](#checking-if-we-can-scrape-the-emoji-lists)
 -   [Scraping the emoji lists](#scraping-the-emoji-lists)
+-   [Which emoji were the most popular?](#which-emoji-were-the most-popular)
 -   [More from ICOTS](#more-from-icots)
 -   [Vanity time: My best tweets?](#vanity-time-my-best-tweets)
 
@@ -283,7 +284,7 @@ emoji_ref_interim1 = as.data.frame(emoji_base) %>%
   mutate(descripID = code == emoji) %>%
   mutate(table = "base")
 
-# The "keycap: *" emoji caused me no end of headaches and I have no idea why
+# The "keycap: \*" emoji caused me no end of headaches and I have no idea why
 
 emoji_ref_interim2 = as.data.frame(emoji_skin) %>%
   select(People.1, People.2, People.14) %>%
@@ -373,7 +374,7 @@ emoji_prop_icml = sum(!is.na(emoji_spread_icml$`1`))/dim(unique_icml)[1]
 
 So 7% of ICOTS tweets had at least one emoji in them, 13% of useR tweets and 3% of ICML tweets.
 
-#### Which emoji were the most popular?
+### Which emoji were the most popular?
 
 This is a not very elegant function to count how many times each emoji in the emoji\_ref dataframe appears in the text you're analysing (in the form of the all columns from the emoji\_spread dataset). I'm also not 100% sure the tryCatch is set up properly - it needs a tryCatch because I keep getting errors for the keycap: \* emoji.
 
@@ -419,7 +420,7 @@ emoji_counts_icots = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icots))
 {% endhighlight %}
 
-<http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icots_emoji.html>" width="100%" style="border: none;"&gt;</iframe>
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_icots_emoji.html>" width="100%" style="border: none;"&gt;</iframe>
 
 #### Top \#useR2018 emoji
 
@@ -439,8 +440,6 @@ emoji_counts_user = emoji_ref %>%
 
 frameWidget(DT::datatable(emoji_counts_user))
 {% endhighlight %}
-
-<!--html_preserve-->
 
 <iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/widgets/widget_user_emoji.html" width="100%" style="border: none;">
 </iframe>
