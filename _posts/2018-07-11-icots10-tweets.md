@@ -510,6 +510,6 @@ myfavtweets = mytweets_noRT %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522176), with 8 retweets and 31 favourites. Thanks guys!
+[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522177), with 8 retweets and 31 favourites. Thanks guys!
 
 In earlier versions of this post I calculated what proportion of the \#ICOTS10 tweets were my tweets but used ALL ICOTS tweets, including all the many retweets. I tweeted 6% of the \#ICOTS10 tweets including retweets (my own and others'), but 15% of the original \#ICOTS10 tweets (i.e. not counting retweets). What a loudmouth!
