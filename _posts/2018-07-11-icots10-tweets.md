@@ -33,11 +33,6 @@ How does <a href="https://twitter.com/hashtag/ICOTS10?src=hash&amp;ref_src=twsrc
 -   [More from ICOTS](#more-from-icots)
 -   [Vanity time: My best tweet?](#vanity-time-my-best-tweet)
 
-
-*Last updated:* 13 Jul approx 5:20pm Kyoto time.
-
-Here are some libraries we'll use. (Also note that I made a [GitHub gist with the code to get from the beginning to the first graph](https://gist.github.com/elb0/221b98cd7f89674515f2a25a6cde5859).) I couldn't get the authentication to work for `rtweet`, unfortunately.
-
 {% highlight r %}
 library(twitteR)
 library(ggplot2)
@@ -67,9 +62,9 @@ The tweet that inspired this shared a tweet that compared useR (a conference abo
 Also note, the `n =` were chosen by trial and error. Very sophisticated.
 
 {% highlight r %}
-icots = searchTwitter('#icots10', n = 1150)
-user = searchTwitter('#useR2018', n = 4200)
-icml = searchTwitter('#ICML2018', n = 4200)
+icots = searchTwitter('#icots10', n = 1200)
+user = searchTwitter('#useR2018', n = 5000)
+icml = searchTwitter('#ICML2018', n = 5200)
 
 icots_tweets = twListToDF(icots) %>%
   mutate(Hashtag = "#ICOTS10") %>%
@@ -111,7 +106,7 @@ all_tweets %>%
   ggtitle("Battle of the conference hashtags")
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/graph-1.png)
+![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/graph-1.png)
 
 {% highlight r %}
 all_noRT %>%
@@ -124,7 +119,7 @@ all_noRT %>%
   ggtitle("Battle of the conference hashtags - retweets removed")
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/graph-2.png)
+![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/graph-2.png)
 
 Can you spot which day ICOTS had a half-day and folks went off exploring Kyoto or to see the deer at Nara instead of tweeting?
 
@@ -146,7 +141,7 @@ all_tweets %>%
   ggtitle("Retweets by conference hashtag")
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
+![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/biggest_retweets-1.png)
 
 ### Number of favourites?
 
@@ -159,7 +154,7 @@ all_tweets %>%
   ggtitle("Favourites by hashtag")
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
+![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/biggest_favourites-1.png)
 
 ### What about percentage of tweets getting favourited or retweeted?
 
@@ -180,7 +175,7 @@ all_noRT %>%
   scale_y_continuous(labels = scales::percent)
 {% endhighlight %}
 
-![]({{site.baseurl}}/images/conferencetweets_files/figure-markdown_github/percentages-1.png)
+![]({{ site.baseurl }}/images/conferencetweets_files/figure-markdown_github/percentages-1.png)
 
 The retweets are strong with \#ICOTS10!
 
@@ -202,7 +197,7 @@ topretweetuser = toptweet %>%
   filter(Hashtag == "#useR2018")
 {% endhighlight %}
 
-Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017677311200649216), [ICML tweet](https://twitter.com/anyuser/status/1017685299046969344) and [useR tweet](https://twitter.com/anyuser/status/1017665435888582656).
+Check out the most retweeted [ICOTS tweet](https://twitter.com/anyuser/status/1017805795109548032), [ICML tweet](https://twitter.com/anyuser/status/1017881934448513024) and [useR tweet](https://twitter.com/anyuser/status/1017918719123771392).
 
 ### The most favourites?
 
@@ -387,7 +382,7 @@ emoji_prop_user = sum(!is.na(emoji_spread_user$`1`))/dim(unique_user)[1]
 emoji_prop_icml = sum(!is.na(emoji_spread_icml$`1`))/dim(unique_icml)[1]
 {% endhighlight %}
 
-So 7% of ICOTS tweets had at least one emoji in them, 10% of useR tweets and 3% of ICML tweets.
+So 7% of ICOTS tweets had at least one emoji in them, 11% of useR tweets and 3% of ICML tweets.
 
 ### Which emoji were the most popular?
 
@@ -435,7 +430,7 @@ emoji_counts_icots = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icots))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icots_emoji.html" width="100%" height="600" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icots_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
 #### Top \#useR2018 emoji
 
@@ -456,7 +451,7 @@ emoji_counts_user = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_user))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_user_emoji.html" width="100%" height="600" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_user_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
 #### Top \#ICML2018 emoji
 
@@ -477,10 +472,10 @@ emoji_counts_icml = emoji_ref %>%
 frameWidget(DT::datatable(emoji_counts_icml))
 {% endhighlight %}
 
-<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icml_emoji.html" width="100%" height="600" style="border: none;">
+<iframe src="http://blog.dataembassy.co.nz/images/conferencetweets_files/figure-markdown_github/widgets/widget_icml_emoji.html" width="100%" height="500" style="border: none;">
 </iframe>
-
-### More from ICOTS
+More from ICOTS
+---------------
 
 Most of my tweets from this conference are in the below thread and I also set up a [list of resources](http://blog.dataembassy.co.nz/icots10/) to check out after the conference based on people's recommendations.
 
@@ -508,13 +503,13 @@ mytweets = all_tweets %>%
 myprop_noRT = dim(mytweets_noRT)[1]/dim(filter(all_noRT, Hashtag == "#ICOTS10"))[1]
 myprop = dim(mytweets)[1]/dim(filter(all_tweets, Hashtag == "#ICOTS10"))[1]
 
-myfavtweets = mytweets %>%
+myfavtweets = mytweets_noRT %>%
   arrange(desc(retweetCount)) %>%
   select(id, text, retweetCount, favoriteCount) %>%
   filter(retweetCount == max(retweetCount)) %>%
   filter(favoriteCount == max(favoriteCount))
 {% endhighlight %}
 
-[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522177), with 8 retweets and 31 favourites. Thanks guys!
+[Turns out this one was pretty good](https://twitter.com/anyuser/status/1016130460697522176), with 8 retweets and 31 favourites. Thanks guys!
 
-In earlier versions of this post I calculated what proportion of the #ICOTS10 tweets were my tweets but used ALL ICOTS tweets, including all the many retweets. I tweeted 6% of the #ICOTS10 tweets including retweets (my own and others'), but 15% of the original \#ICOTS10 tweets (i.e. not counting retweets). What a loudmouth!
+In earlier versions of this post I calculated what proportion of the \#ICOTS10 tweets were my tweets but used ALL ICOTS tweets, including all the many retweets. I tweeted 6% of the \#ICOTS10 tweets including retweets (my own and others'), but 15% of the original \#ICOTS10 tweets (i.e. not counting retweets). What a loudmouth!
