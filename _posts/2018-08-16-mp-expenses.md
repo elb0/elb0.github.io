@@ -5,6 +5,6 @@ tags:
   - r-code
 ---
 
-{% include MP-expenses.html %}
+So I totally shouldn’t be playing with this data. I SHOULD be editing a paper for my thesis. But come on, this is pretty interesting! 
 
-.
+{% include MP-expenses.html %}
