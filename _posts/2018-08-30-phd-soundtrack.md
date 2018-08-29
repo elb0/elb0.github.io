@@ -70,9 +70,9 @@ This song also fits in the *Songs about knowing/not knowing stuff* with the grea
 
 > *But my busy mind is burning to use what learning I've got  
 > I won't waste any time  
-> I'll strike while the iron is hot  
+> I'll strike while the iron is hot*
 
-> If they asked me, I could write a book*  
+> *If they asked me, I could write a book*  
 
 [Full lyrics here.](https://genius.com/Ella-fitzgerald-i-could-write-a-book-lyrics)
 
@@ -129,9 +129,9 @@ The chapter metaphor for struggling with a relationship works quite well as a re
 > Chapter two I think I fell in love with you  
 > You said you'd stand by me in the middle of chapter three  
 > But you were up to your old tricks in  
-> Chapters four, five and six  
+> Chapters four, five and six*  
 >
-> And I'm giving you a longing look  
+> *And I'm giving you a longing look  
 > Everyday, everyday, everyday, everyday, everyday  
 > Everyday I write the book*
 
