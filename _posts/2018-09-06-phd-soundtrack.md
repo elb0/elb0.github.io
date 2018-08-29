@@ -23,13 +23,13 @@ P.s. In NZ doctoral students write a "thesis" and honours and masters students d
 
 ## Why?
 
-I'm a big lyrics person, so a lot of the reasons I've chosen these songs are because of the words.
+Of course I need to explain each song now. Opening Christmas presents from me takes ages in my family because I NEED to give everyone a DETAILED explanation of WHY I got what I did for them.
 
-The songs are sort of grouped in 5 themes:
+The songs are (loosely) grouped under 5 themes:
 - [Writing](#writing)
 - [Get pumped](#get-pumped)
-- [Mental health (kinda)](#mental-health-(kinda))
-- [Songs about knowing/not knowing stuff](#songs-about-knowing/not-knowing-stuff)
+- [Mental health-ish](#mental-health-ish)
+- [Songs about knowing or not knowing stuff](#songs-about-knowing-or-not-knowing-stuff)
 - [Perseverance](#perseverance)
 
 ### Writing
@@ -154,7 +154,7 @@ to
 
 > *You've got to bloody write to say*
 
-and its a song exhorting you to disseminate findings through thesis writing. Yay!
+and it is a song exhorting you to disseminate findings through thesis writing. Yay!
 
 [Full lyrics here.](https://genius.com/Supertramp-bloody-well-right-lyrics)
 
@@ -219,7 +219,7 @@ This song, as well as the next two, comes from a playlist I made for before lect
 
 Cheesy and oh so good.
 
-![Halloween 2010]({{ site.baseurl }}/images/wonder-woman.png)
+![Halloween 2010]({{ site.baseurl }}/images/wonder-woman.jpg)
 
 > *All the world's waiting for you,  
 > and the power you possess.*
@@ -247,7 +247,7 @@ My mum, sister and I used to listen to this in the car. It is a very old fashion
 
 [Full lyrics here.](https://genius.com/Peggy-lee-im-a-woman-lyrics)
 
-### Mental health (kinda)
+### Mental health-ish
 
 **Secret for the Mad, dodie**
 
@@ -303,7 +303,7 @@ During undergrad some of my friends in Mathematics and I would make up metaphors
 
 [Full lyrics here.](https://genius.com/Tom-lehrer-masochism-tango-lyrics)
 
-### Songs about knowing/not knowing stuff
+### Songs about knowing or not knowing stuff
 
 **If I Only Had a Brain, from the Wizard of Oz**
 
