@@ -210,7 +210,7 @@ And on the nose:
 
 ### Get pumped
 
-Why are ALL these songs gendered? I don't know. But they get me pumped. Send me your non-gendered getting pumped songs!
+Why are ALL these songs gendered? I don't know. But they get me pumped. Send me your non-gendered getting pumped songs! I'm on Twitter, [@Liza_Bolton](https://twitter.com/Liza_Bolton).
 
 **I'll Make A Man Out Of You, Donny Osmund, Mulan Original Soundtrack**
 
