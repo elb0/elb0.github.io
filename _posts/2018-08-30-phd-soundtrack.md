@@ -11,6 +11,8 @@ A selection of songs with lyrics or messages I like for getting through PhDing.
 
 As of writing I am not yet someone who has 'got through' a PhD, but I do have less than a year to go. It is also my mum's birthday next week, and she's a big influence on my music tastes - so this one is for you mum!
 
+I'd love any of your PhD soundtrack recommendations! Let me know on Twitter, [@Liza_Bolton](https://twitter.com/Liza_Bolton).
+
 P.s. In NZ doctoral students write a "thesis" and honours and masters students do "dissertations", which I think is the opposite of how these words are used elsewhere? When I say "thesis" I mean the big document I submit at the end of 3-4 years in the hopes people can call me Dr Liza.
 
 ## My playlist
@@ -446,3 +448,15 @@ He's probably not talking about pursuing a doctorate...but hey, we've happily ig
 Stand your ground! Don't let that thesis kick you around!
 
 [Full lyrics here.](https://genius.com/Tom-petty-i-wont-back-down-lyrics)
+
+## References
+
+I'd looked at these lists while making mine. You might find something that works for you on them that I didn't include in my own list.  
+
+[BinaryThis' Soundtrack for Hard Time PhD Blues](https://binarythis.com/2013/11/15/soundtrack-for-hard-time-phd-blues/)  
+
+[20 Best Songs for Writers and About Writing: The Ultimate Writing Mixtape](http://www.writersdigest.com/whats-new/20-best-songs-writers-writing-ultimate-writing-mixtape)  
+
+[20 Best Graduation Songs of the Last 20 Years](https://www.rollingstone.com/culture/culture-lists/20-best-graduation-songs-of-the-last-20-years-167659/)  
+
+[40 Songs About School, Intelligence, and Feeling Smart](https://spinditty.com/playlists/Songs-About-Education-School-Intelligence-and-Feeling-Smart)
