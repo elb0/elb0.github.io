@@ -32,6 +32,8 @@ The songs are (loosely) grouped under 5 themes:
 - [Songs about knowing or not knowing stuff](#songs-about-knowing-or-not-knowing-stuff)
 - [Perseverance](#perseverance)
 
+![]({{ site.baseurl }}/images/writing.jpg)
+
 ### Writing
 
 Songs about...writing. Where they say book, think thesis or dissertation.
@@ -201,6 +203,9 @@ And on the nose:
 
 [Full lyrics here.](https://genius.com/Bruce-springsteen-dancing-in-the-dark-lyrics)
 
+
+![]({{ site.baseurl }}/images/pump.jpg)
+
 ### Get pumped
 
 Why are ALL these songs gendered? I don't know. But they get me pumped. Send me your non-gendered getting pumped songs!
@@ -246,6 +251,8 @@ My mum, sister and I used to listen to this in the car. It is a very old fashion
 > *I got a twenty-dollar gold piece says there ain't nothing I can't do*
 
 [Full lyrics here.](https://genius.com/Peggy-lee-im-a-woman-lyrics)
+
+![]({{ site.baseurl }}/images/breathe.jpg)
 
 ### Mental health-ish
 
@@ -302,6 +309,9 @@ During undergrad some of my friends in Mathematics and I would make up metaphors
 > It's here that I must be*
 
 [Full lyrics here.](https://genius.com/Tom-lehrer-masochism-tango-lyrics)
+
+
+![]({{ site.baseurl }}/images/dino.jpg)
 
 ### Songs about knowing or not knowing stuff
 
@@ -395,6 +405,8 @@ This one is silly but fun. And I like that smarts make it on this (somewhat conf
 > *Who is fast and thorough and sharp as a tack*
 
 [Full lyrics here.](https://genius.com/Cake-short-skirt-long-jacket-lyrics)
+
+![]({{ site.baseurl }}/images/road.jpg)
 
 ### Perseverance
 
