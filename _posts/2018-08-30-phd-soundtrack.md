@@ -36,7 +36,7 @@ The songs are (loosely) grouped under 5 themes:
 
 Songs about...writing. Where they say book, think thesis or dissertation.
 
-**Non-stop, Various, Original Broadway Cast of Hamilton**
+**Non-Stop, from the Original Broadway Cast of Hamilton**
 
 <iframe src="https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -60,7 +60,7 @@ I can't find a song called "Thesis Writer", but the opening lines of "Paperback 
 
 [Full lyrics here.](https://genius.com/The-beatles-paperback-writer-lyrics)
 
-**I Could Write a Book, Ella Fitzgerald**
+**I Could Write A Book, Ella Fitzgerald**
 
 <iframe src="https://open.spotify.com/embed/track/1N0dXBKSV6wG0UA3e2T1oB" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -117,7 +117,7 @@ You're saying I'm going to have to write this thing? Better get to it...
 
 [Full lyrics here.](https://genius.com/Natasha-bedingfield-unwritten-lyrics)
 
-**Everyday I Write the Book, London Pop Ensemble (originally Elvis Costello & The Attractions)**
+**Everyday I Write The Book, London Pop Ensemble (originally Elvis Costello & The Attractions)**
 
 <iframe src="https://open.spotify.com/embed/track/6qgIsBSOJBoNH1RNvANlOq" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -183,7 +183,7 @@ This goes well with the previous song in some ways. The link is kinda tenuous, b
 
 [Full lyrics here.](https://genius.com/Vampire-weekend-oxford-comma-lyrics)
 
-**Dancing in the Dark, Bruce Springsteen**
+**Dancing In The Dark, Bruce Springsteen**
 
 <iframe src="https://open.spotify.com/embed/track/7FwBtcecmlpc1sLySPXeGE" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -205,7 +205,7 @@ And on the nose:
 
 Why are ALL these songs gendered? I don't know. But they get me pumped. Send me your non-gendered getting pumped songs!
 
-**I'll Make a Man Out Of You, Donny Osmund, Mulan Original Soundtrack**
+**I'll Make A Man Out Of You, Donny Osmund, Mulan Original Soundtrack**
 
 <iframe src="https://open.spotify.com/embed/track/58kNJana4w5BIjlZE2wq5m" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -217,7 +217,7 @@ This song, as well as the next two, comes from a playlist I made for before lect
 
 <iframe src="https://open.spotify.com/embed/track/3ci52CcvEVY7rsCkEVGmvm" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-Cheesy and oh so good.
+Cheesy and oh so good. And my 2010 Halloween costume.
 
 ![Halloween 2010]({{ site.baseurl }}/images/wonder-woman.jpg)
 
@@ -237,7 +237,7 @@ Time to get a little disco. Along with the Wonder Woman theme I used to listen t
 
 [Full lyrics here.](https://genius.com/Chaka-khan-im-every-woman-lyrics)
 
-**I'm a Woman, Peggy Lee**
+**I'm A Woman, Peggy Lee**
 
 <iframe src="https://open.spotify.com/embed/track/2oBweKXM5LRYS3QQAeXTUK" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -249,7 +249,7 @@ My mum, sister and I used to listen to this in the car. It is a very old fashion
 
 ### Mental health-ish
 
-**Secret for the Mad, dodie**
+**Secret For The Mad, dodie**
 
 <iframe src="https://open.spotify.com/embed/track/2Uk0aFqYCtecHL5MCq2we0" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -279,9 +279,9 @@ This song always puts me in a good mood and I really like the music video, too. 
 Or, if you don't "wanna get better", go crazy instead. And this is just a great song.
 
 > *Are we gonna let de-elevator bring us down?  
-> Oh, no lets go!  
+> Oh, no lets go!*  
 >  
-> [Chorus]  
+> *[Chorus]  
 > Let's go crazy  
 > Let's get nuts*
 
@@ -293,7 +293,7 @@ Or, if you don't "wanna get better", go crazy instead. And this is just a great 
 
 I loooove Tom Lehrer. The glasses, the musical satire, the being a mathematics lecturer. Excuse me while I wipe the drool off my keyboard.
 
-During undergrad some of my friends in Mathematics and I would make up metaphors for our unhealthy relationships with Maths. Usually as some form of unrequited love or abusive relationship. Doing a PhD is a bit of a Masochism tango really. Embrace the pain.
+During undergrad some of my friends in Mathematics and I would make up metaphors for our unhealthy relationships with the subject. Usually as some form of unrequited love or abuse. Doing a PhD is a bit of a Masochism Tango really. Embrace the pain.
 
 > *At your command  
 > Before you here I stand  
@@ -305,7 +305,7 @@ During undergrad some of my friends in Mathematics and I would make up metaphors
 
 ### Songs about knowing or not knowing stuff
 
-**If I Only Had a Brain, from the Wizard of Oz**
+**If I Only Had A Brain, from the Wizard of Oz**
 
 <iframe src="https://open.spotify.com/embed/track/6G6RGCdmgJ5ZPNe8hTne9q" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -320,7 +320,7 @@ This song was stuck in my head today and the catalyst for this playlist creation
 
 [Full lyrics here.](https://genius.com/Harold-arlen-if-i-only-had-a-brain-lyrics)
 
-**(What a) Wonderful World, Sam Cooke**
+**(What A) Wonderful World, Sam Cooke**
 
 <iframe src="https://open.spotify.com/embed/track/7N15WWy12QAMpGAh6QMAej" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
@@ -334,7 +334,7 @@ And it will certainly be a wonderful world when my PhD is done...
 
 <iframe src="https://open.spotify.com/embed/track/1qkZgJ82a1TkshZyx3L1SH" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-Why don't people write cute song about love and school subjects anymore? This songs pairs well with the Sam Cooke song above.
+Why don't people write cute songs about love and school subjects anymore? This songs pairs well with the Sam Cooke song above.
 
 I could sing this song to by thesis topic without having to change a single word.
 
@@ -353,7 +353,7 @@ And I just can't resist this cheeky final bit:
 
 [Full lyrics here.](https://genius.com/Peggy-lee-i-dont-know-enough-about-you-lyrics)
 
-**I am the Very Model of a Modern Major-General, Gilbert and Sullivan from Pirates of Penzance**
+**I Am The Very Model Of A Modern Major-General, Gilbert and Sullivan from Pirates of Penzance**
 
 <iframe src="https://open.spotify.com/embed/track/3Ba5TxK44yUIco7pNvePXW" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
