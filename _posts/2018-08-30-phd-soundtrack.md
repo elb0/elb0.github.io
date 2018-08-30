@@ -44,7 +44,7 @@ Songs about...writing. Where they say book, think thesis or dissertation.
 
 <iframe src="https://open.spotify.com/embed/track/7qfoq1JFKBUEIvhqOHzuqX" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-I've talked briefly [elsewhere](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/school-of-graduate-studies/doctoral-spotlight0.html) about loving the Hamilton soundtrack. I'll listen to the whole thing through while doing data analysis, and know it's time to go home when I'm the last person in the office and crying through the final song, "Who Live, Who Dies, Who Tells Your Story". If I had to only pick one song from it for PhDing, Non-Stop wins hands down.
+I've talked briefly [elsewhere](https://www.auckland.ac.nz/en/students/academic-information/postgraduate-students/school-of-graduate-studies/doctoral-spotlight0.html) about loving the Hamilton soundtrack. I'll listen to the whole thing through while doing data analysis, and know it's time to go home when I'm the last person in the office and crying through the final song, "Who Lives, Who Dies, Who Tells Your Story". If I had to only pick one song from it for PhDing, "Non-Stop" wins hands down.
 
 > *Why do you write like you’re running out of time?  
 > Write day and night like you’re running out of time?*
@@ -68,7 +68,7 @@ I can't find a song called "Thesis Writer", but the opening lines of "Paperback 
 
 <iframe src="https://open.spotify.com/embed/track/1N0dXBKSV6wG0UA3e2T1oB" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-This song also fits in the *Songs about knowing/not knowing stuff* with the great little opening. I sure feel like I can't spell or count a lot more than I think is strictly good for someone with as many years of education as I supposedly have. But...
+This song also fits in the *Songs about knowing or not knowing stuff* with the great little opening. I sure feel like I can't spell or count a lot more than I think is strictly good for someone with as many years of education as I supposedly have. But...
 
 > *But my busy mind is burning to use what learning I've got  
 > I won't waste any time  
@@ -158,7 +158,7 @@ to
 
 > *You've got to bloody write to say*
 
-and it is a song exhorting you to disseminate findings through thesis writing. Yay!
+and it is a song exhorting you to disseminate findings through writing. Yay!
 
 [Full lyrics here.](https://genius.com/Supertramp-bloody-well-right-lyrics)
 
@@ -183,7 +183,7 @@ Catchy song to the tune of "Blurred Lines", but much more educational and I thin
 
 <iframe src="https://open.spotify.com/embed/track/5nHRIKsXDwUpse9gzrAxLR" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-This goes well with the previous song in some ways. The link is kinda tenuous, but it's a song I've always enjoyed. But I think I do give a f*** about an Oxford comma...
+This goes well with the previous song. Well, maybe  the link is kinda tenuous, but it's a song I've always enjoyed. And I think I do give a f*** about an Oxford comma...
 
 [Full lyrics here.](https://genius.com/Vampire-weekend-oxford-comma-lyrics)
 
@@ -248,7 +248,7 @@ Time to get a little disco. Along with the Wonder Woman theme I used to listen t
 
 <iframe src="https://open.spotify.com/embed/track/2oBweKXM5LRYS3QQAeXTUK" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-My mum, sister and I used to listen to this in the car. It is a very old fashioned and limited view of being a woman, but DAMN, you can't beat the confidence in this song!
+My mum, sister and I used to listen to this in the car. Sure, it is a very limited view of being a woman, but DAMN, you can't beat the confidence in this song!
 
 > *I got a twenty-dollar gold piece says there ain't nothing I can't do*
 
@@ -346,9 +346,9 @@ And it will certainly be a wonderful world when my PhD is done...
 
 <iframe src="https://open.spotify.com/embed/track/1qkZgJ82a1TkshZyx3L1SH" width="300" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
 
-Why don't people write cute songs about love and school subjects anymore? This songs pairs well with the Sam Cooke song above.
+Why don't people write cute songs about love and school subjects anymore? This song pairs well with the Sam Cooke song above.
 
-I could sing this song to by thesis topic without having to change a single word.
+I could sing this to my thesis topic without having to change a single word.
 
 > *I read the latest news  
 > No buttons on my shoes  
