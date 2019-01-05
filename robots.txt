@@ -1,5 +1,4 @@
 User-agent: *
 Disallow: /images/
 
-# If you're here from R-Ladies Auckland, kia ora! ;)
-# Thanks to Anna, Kim and Anjali for organising this <3
+# Kia ora and hello U of T Statistical Sciences folks!
