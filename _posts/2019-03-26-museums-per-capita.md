@@ -1,4 +1,4 @@
---
+---
 layout: post
 title: "A quick look at museums per capita"
 tags:
