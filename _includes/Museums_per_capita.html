@@ -1581,7 +1581,6 @@ $(document).ready(function () {
 </div>
 
 
-<p>I saw a cool tweet from <a href="https://twitter.com/spil030">Scott Pilkington</a> today about museums per capita, and <a href="https://twitter.com/teh_aimee">Aimee Whitcroft</a> had some interesting follow up questions about countries similar in population to New Zealand…this was far too good a procrastination opportunity!</p>
 <blockquote class="twitter-tweet" data-lang="en">
 <p lang="en" dir="ltr">
 Here's a nice random fact for you: NZ has a high number of museums per capita. 2013 was 1:9,500. <br><br>Same year, UK was 1:17,000, the US 1:24,000. 2008 Australia was 1:18,000. <br><br>~55,000 museums globally, approx one for every 146,000 people. NZ is well ahead of the bell curve!
@@ -1694,8 +1693,9 @@ nrow(uruguay)</code></pre>
   mutate(links = paste0(&quot;https://en.wikipedia.org/&quot;, links))</code></pre>
 <p>…and then scrape each of these, but aside from there being several ways these pages are formatted, you also have some lists just under the country title, not linking to a new page, and then you have some missing (I think Republic of Congo’s list of museums is missing from this main page). Ugh.</p>
 </div>
-<div id="making-the-graph" class="section level1">
-<h1>Making the graph</h1>
+<div id="making-a-graph" class="section level1">
+<h1>Making a graph</h1>
+<p>So here is a quick look at the number of museums per 100,000 people. There are quite a few limitations on the data of course, but interesting none the less, I hope.</p>
 <pre class="r"><code># numbers mostly by hand from wikipedia
 
 museums = read_csv(&quot;museums.csv&quot;)
